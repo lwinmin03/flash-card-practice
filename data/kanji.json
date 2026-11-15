@@ -1,0 +1,637 @@
+[
+  {
+    "kanji": "空席",
+    "hiragana": "くうせき",
+    "meaning": "ထိုင်ခုံအလွတ်"
+  },
+  {
+    "kanji": "順番",
+    "hiragana": "じゅんばん",
+    "meaning": "အစဉ်လိုက်"
+  },
+  {
+    "kanji": "失業",
+    "hiragana": "しつぎょう",
+    "meaning": "အလုပ်လက်မဲ့"
+  },
+  {
+    "kanji": "組む",
+    "hiragana": "くむ",
+    "meaning": "ချိတ်ဆက်သည်"
+  },
+  {
+    "kanji": "息",
+    "hiragana": "いき",
+    "meaning": "အသက်ရှုခြင်း"
+  },
+  {
+    "kanji": "苦労",
+    "hiragana": "くろう",
+    "meaning": "ဆင်းရဲ ပင်ပန်းခြင်း"
+  },
+  {
+    "kanji": "楽器",
+    "hiragana": "がっき",
+    "meaning": "ဂီတတူရိယာ"
+  },
+  {
+    "kanji": "専門家",
+    "hiragana": "せんもんか",
+    "meaning": "ပညာရှင်"
+  },
+  {
+    "kanji": "過ごす",
+    "hiragana": "すごす",
+    "meaning": "အချိန်ကုန်ဆုံးသည်"
+  },
+  {
+    "kanji": "到着",
+    "hiragana": "とうちゃく",
+    "meaning": "ဆိုက်ရောက်သည်"
+  },
+  {
+    "kanji": "折る",
+    "hiragana": "おる",
+    "meaning": "ကျိုးသည်"
+  },
+  {
+    "kanji": "情報",
+    "hiragana": "じょうほう",
+    "meaning": "သတင်းအချက်အလက်"
+  },
+  {
+    "kanji": "値段",
+    "hiragana": "ねだん",
+    "meaning": "ဈေးနှုန်း"
+  },
+  {
+    "kanji": "深い",
+    "hiragana": "ふかい",
+    "meaning": "နက်နဲသော၊ နက်ရှိုင်းသော"
+  },
+  {
+    "kanji": "表面",
+    "hiragana": "ひょうめん",
+    "meaning": "မျက်နှာပြင်"
+  },
+  {
+    "kanji": "自由",
+    "hiragana": "じゆう",
+    "meaning": "လွတ်လပ်စွာ"
+  },
+  {
+    "kanji": "法律",
+    "hiragana": "ほうりつ",
+    "meaning": "ဥပဒေ"
+  },
+  {
+    "kanji": "観光",
+    "hiragana": "かんこう",
+    "meaning": "လှည့်ပတ်ကြည့်ရှုခြင်း"
+  },
+  {
+    "kanji": "券",
+    "hiragana": "けん",
+    "meaning": "လက်မှတ်"
+  },
+  {
+    "kanji": "短い",
+    "hiragana": "みじかい",
+    "meaning": "တိုသော"
+  },
+  {
+    "kanji": "他人",
+    "hiragana": "たにん",
+    "meaning": "အခြားသူ"
+  },
+  {
+    "kanji": "示す",
+    "hiragana": "しめす",
+    "meaning": "ညွှန်ပြသည်"
+  },
+  {
+    "kanji": "外科",
+    "hiragana": "げか",
+    "meaning": "ခွဲစိတ်ဌာန"
+  },
+  {
+    "kanji": "笑顔",
+    "hiragana": "えがお",
+    "meaning": "အပြုံးမျက်နှာ"
+  },
+  {
+    "kanji": "以降",
+    "hiragana": "いこう",
+    "meaning": "နောက်ပိုင်း"
+  },
+  {
+    "kanji": "横断",
+    "hiragana": "おうだん",
+    "meaning": "ဖြတ်သန်းခြင်း"
+  },
+  {
+    "kanji": "合図",
+    "hiragana": "あいず",
+    "meaning": "အချက်ပြ"
+  },
+  {
+    "kanji": "歯",
+    "hiragana": "は",
+    "meaning": "သွား"
+  },
+  {
+    "kanji": "結ぶ",
+    "hiragana": "むすぶ",
+    "meaning": "ချည်နှောင်သည်"
+  },
+  {
+    "kanji": "復習",
+    "hiragana": "ふくしゅう",
+    "meaning": "ပြန်လည်လေ့ကျင့်ခြင်း"
+  },
+  {
+    "kanji": "生える",
+    "hiragana": "はえる",
+    "meaning": "ပေါက်ဖွားသည်"
+  },
+  {
+    "kanji": "各地",
+    "hiragana": "かくち",
+    "meaning": "နေရာတစ်ခုစီ"
+  },
+  {
+    "kanji": "貯金",
+    "hiragana": "ちょきん",
+    "meaning": "ငွေစုခြင်း"
+  },
+  {
+    "kanji": "文章",
+    "hiragana": "ぶんしょう",
+    "meaning": "စာပိုဒ်"
+  },
+  {
+    "kanji": "改札",
+    "hiragana": "かいさつ",
+    "meaning": "လက်မှတ်စစ်ခြင်း"
+  },
+  {
+    "kanji": "笑う",
+    "hiragana": "わらう",
+    "meaning": "ရယ်မောသည်"
+  },
+  {
+    "kanji": "倍",
+    "hiragana": "ばい",
+    "meaning": "အဆ"
+  },
+  {
+    "kanji": "独身",
+    "hiragana": "どくしん",
+    "meaning": "လူပျို၊ လူလွတ်"
+  },
+  {
+    "kanji": "貸す",
+    "hiragana": "かす",
+    "meaning": "ချေးငှားသည်"
+  },
+  {
+    "kanji": "横",
+    "hiragana": "よこ",
+    "meaning": "ဘေး"
+  },
+  {
+    "kanji": "自然",
+    "hiragana": "しぜん",
+    "meaning": "သဘာဝ"
+  },
+  {
+    "kanji": "替える",
+    "hiragana": "かえる",
+    "meaning": "လဲလှယ်သည်"
+  },
+  {
+    "kanji": "応用",
+    "hiragana": "おうよう",
+    "meaning": "အသုံးချခြင်း"
+  },
+  {
+    "kanji": "一般的",
+    "hiragana": "いっぱんてき",
+    "meaning": "ယေဘုယျ"
+  },
+  {
+    "kanji": "厚い",
+    "hiragana": "あつい",
+    "meaning": "ထူသော"
+  },
+  {
+    "kanji": "温泉",
+    "hiragana": "おんせん",
+    "meaning": "ရေပူစမ်း"
+  },
+  {
+    "kanji": "雑誌",
+    "hiragana": "ざっし",
+    "meaning": "မဂ္ဂဇင်း"
+  },
+  {
+    "kanji": "仮定",
+    "hiragana": "かてい",
+    "meaning": "ယူဆချက်"
+  },
+  {
+    "kanji": "血液型",
+    "hiragana": "けつえきがた",
+    "meaning": "သွေးအမျိုးအစား"
+  },
+  {
+    "kanji": "湖",
+    "hiragana": "みずうみ",
+    "meaning": "ရေကန်"
+  },
+  {
+    "kanji": "変化",
+    "hiragana": "へんか",
+    "meaning": "ပြောင်းလဲခြင်း"
+  },
+  {
+    "kanji": "伝える",
+    "hiragana": "つたえる",
+    "meaning": "တစ်ဆင့်ပြောသည်"
+  },
+  {
+    "kanji": "荷物",
+    "hiragana": "にもつ",
+    "meaning": "အထုပ်အပိုး"
+  },
+  {
+    "kanji": "平均",
+    "hiragana": "へいきん",
+    "meaning": "ပျမ်းမျှ"
+  },
+  {
+    "kanji": "支給",
+    "hiragana": "しきゅう",
+    "meaning": "ထောက်ပံ့ငွေ၊ လစာ"
+  },
+  {
+    "kanji": "借りる",
+    "hiragana": "かりる",
+    "meaning": "ငှားယူသည်"
+  },
+  {
+    "kanji": "欠点",
+    "hiragana": "けってん",
+    "meaning": "အားနည်းချက်"
+  },
+  {
+    "kanji": "緑",
+    "hiragana": "みどり",
+    "meaning": "အစိမ်းရောင်"
+  },
+  {
+    "kanji": "願う",
+    "hiragana": "ねがう",
+    "meaning": "တောင်းဆိုသည်"
+  },
+  {
+    "kanji": "観客",
+    "hiragana": "かんきゃく",
+    "meaning": "ပရိသတ်"
+  },
+  {
+    "kanji": "払う",
+    "hiragana": "はらう",
+    "meaning": "ပေးချေသည်"
+  },
+  {
+    "kanji": "加える",
+    "hiragana": "くわえる",
+    "meaning": "ထပ်ပေါင်းထည့်သည်"
+  },
+  {
+    "kanji": "訓練",
+    "hiragana": "くんれん",
+    "meaning": "လေ့ကျင့်ခြင်း"
+  },
+  {
+    "kanji": "豆",
+    "hiragana": "まめ",
+    "meaning": "ပဲ"
+  },
+  {
+    "kanji": "共通",
+    "hiragana": "きょうつう",
+    "meaning": "ဘုံတူညီသော"
+  },
+  {
+    "kanji": "税金",
+    "hiragana": "ぜいきん",
+    "meaning": "အခွန်ငွေ"
+  },
+  {
+    "kanji": "波",
+    "hiragana": "なみ",
+    "meaning": "လှိုင်း"
+  },
+  {
+    "kanji": "早く",
+    "hiragana": "はやく",
+    "meaning": "မြန်မြန်"
+  },
+  {
+    "kanji": "満足",
+    "hiragana": "まんぞく",
+    "meaning": "စိတ်ကျေနပ်သော"
+  },
+  {
+    "kanji": "輸出",
+    "hiragana": "ゆしゅつ",
+    "meaning": "တင်ပို့ခြင်း"
+  },
+  {
+    "kanji": "眠い",
+    "hiragana": "ねむい",
+    "meaning": "အိပ်ချင်သော"
+  },
+  {
+    "kanji": "直接",
+    "hiragana": "ちょくせつ",
+    "meaning": "တိုက်ရိုက်"
+  },
+  {
+    "kanji": "燃える",
+    "hiragana": "もえる",
+    "meaning": "လောင်ကျွမ်းသည်"
+  },
+  {
+    "kanji": "位置",
+    "hiragana": "いち",
+    "meaning": "တည်နေရာ"
+  },
+  {
+    "kanji": "禁煙",
+    "hiragana": "きんえん",
+    "meaning": "ဆေးလိပ်မသောက်ရ"
+  },
+  {
+    "kanji": "手術",
+    "hiragana": "しゅじゅつ",
+    "meaning": "ခွဲစိတ်ခြင်း"
+  },
+  {
+    "kanji": "秒",
+    "hiragana": "びょう",
+    "meaning": "စက္ကန့်"
+  },
+  {
+    "kanji": "飛ぶ",
+    "hiragana": "とぶ",
+    "meaning": "ပျံသန်းသည်"
+  },
+  {
+    "kanji": "坂道",
+    "hiragana": "さかみち",
+    "meaning": "လျှောစောက်လမ်း"
+  },
+  {
+    "kanji": "違います",
+    "hiragana": "ちがいます",
+    "meaning": "ကွဲပြားသည်၊ မှားသည်"
+  },
+  {
+    "kanji": "関係",
+    "hiragana": "かんけい",
+    "meaning": "ပတ်သက်ဆက်နွယ်မှု"
+  },
+  {
+    "kanji": "教師",
+    "hiragana": "きょうし",
+    "meaning": "ကျောင်းဆရာ"
+  },
+  {
+    "kanji": "遊ぶ",
+    "hiragana": "あそぶ",
+    "meaning": "ကစားသည်"
+  },
+  {
+    "kanji": "換える",
+    "hiragana": "かえる",
+    "meaning": "လဲလှယ်သည်"
+  },
+  {
+    "kanji": "血圧",
+    "hiragana": "けつあつ",
+    "meaning": "သွေးပေါင်ချိန်"
+  },
+  {
+    "kanji": "続き",
+    "hiragana": "つづき",
+    "meaning": "ဆက်လက်ခြင်း"
+  },
+  {
+    "kanji": "熱心",
+    "hiragana": "ねっしん",
+    "meaning": "စိတ်အားထက်သန်စွာ"
+  },
+  {
+    "kanji": "出勤",
+    "hiragana": "しゅっきん",
+    "meaning": "အလုပ်တက်သည်"
+  },
+  {
+    "kanji": "交流",
+    "hiragana": "こうりゅう",
+    "meaning": "နှီးနှောဖလှယ်သည်"
+  },
+  {
+    "kanji": "普通",
+    "hiragana": "ふつう",
+    "meaning": "ပုံမှန်"
+  },
+  {
+    "kanji": "逆",
+    "hiragana": "ぎゃく",
+    "meaning": "ပြောင်းပြန်"
+  },
+  {
+    "kanji": "観察",
+    "hiragana": "かんさつ",
+    "meaning": "ကြည့်ရှုစစ်ဆေးခြင်း"
+  },
+  {
+    "kanji": "残り",
+    "hiragana": "のこり",
+    "meaning": "အကျန်"
+  },
+  {
+    "kanji": "増減",
+    "hiragana": "ぞうげん",
+    "meaning": "အတိုးအလျော့"
+  },
+  {
+    "kanji": "娘",
+    "hiragana": "むすめ",
+    "meaning": "သမီး"
+  },
+  {
+    "kanji": "予想",
+    "hiragana": "よそう",
+    "meaning": "ကြိုတင်ခန့်မှန်းသည်"
+  },
+  {
+    "kanji": "比べる",
+    "hiragana": "くらべる",
+    "meaning": "နှိုင်းယှဉ်သည်"
+  },
+  {
+    "kanji": "夕日",
+    "hiragana": "ゆうひ",
+    "meaning": "နေဝင်ဆည်းဆာ"
+  },
+  {
+    "kanji": "難しい",
+    "hiragana": "むずかしい",
+    "meaning": "ခက်ခဲသော"
+  },
+  {
+    "kanji": "吸う",
+    "hiragana": "すう",
+    "meaning": "ရှူသည်"
+  },
+  {
+    "kanji": "胃",
+    "hiragana": "い",
+    "meaning": "အစာအိမ်"
+  },
+  {
+    "kanji": "黒板",
+    "hiragana": "こくばん",
+    "meaning": "ကျောက်သင်ပုန်း"
+  },
+  {
+    "kanji": "汚す",
+    "hiragana": "よごす",
+    "meaning": "ညစ်ပတ်စေသည်"
+  },
+  {
+    "kanji": "月末",
+    "hiragana": "げつまつ",
+    "meaning": "လကုန်ပိုင်း"
+  },
+  {
+    "kanji": "産業",
+    "hiragana": "さんぎょう",
+    "meaning": "စက်မှုလုပ်ငန်း"
+  },
+  {
+    "kanji": "朝刊",
+    "hiragana": "ちょうかん",
+    "meaning": "မနက်ခင်းသတင်းစာ"
+  },
+  {
+    "kanji": "断る",
+    "hiragana": "ことわる",
+    "meaning": "ငြင်းဆိုသည်"
+  },
+  {
+    "kanji": "広場",
+    "hiragana": "ひろば",
+    "meaning": "နေရာကျယ်၊ ကွင်းပြင်"
+  },
+  {
+    "kanji": "空",
+    "hiragana": "から",
+    "meaning": "အလွတ်"
+  },
+  {
+    "kanji": "会費",
+    "hiragana": "かいひ",
+    "meaning": "အသင်းဝင်ကြေး"
+  },
+  {
+    "kanji": "配る",
+    "hiragana": "くばる",
+    "meaning": "ဖြန့်ဝေသည်"
+  },
+  {
+    "kanji": "石油",
+    "hiragana": "せきゆ",
+    "meaning": "ရေနံ"
+  },
+  {
+    "kanji": "父母",
+    "hiragana": "ふぼ",
+    "meaning": "မိဘများ"
+  },
+  {
+    "kanji": "加熱",
+    "hiragana": "かねつ",
+    "meaning": "အပူပေးခြင်း"
+  },
+  {
+    "kanji": "感情的",
+    "hiragana": "かんじょうてき",
+    "meaning": "စိတ်ခံစားချက်ဆိုင်ရာ"
+  },
+  {
+    "kanji": "左右",
+    "hiragana": "さゆう",
+    "meaning": "ဘယ်ညာ"
+  },
+  {
+    "kanji": "負ける",
+    "hiragana": "まける",
+    "meaning": "ရှုံးနိမ့်သည်"
+  },
+  {
+    "kanji": "西洋",
+    "hiragana": "せいよう",
+    "meaning": "အနောက်တိုင်း"
+  },
+  {
+    "kanji": "腹痛",
+    "hiragana": "ふくつう",
+    "meaning": "ဗိုက်အောင့်ခြင်း"
+  },
+  {
+    "kanji": "終点",
+    "hiragana": "しゅうてん",
+    "meaning": "နောက်ဆုံးမှတ်တိုင်"
+  },
+  {
+    "kanji": "帯",
+    "hiragana": "おび",
+    "meaning": "ကီမိုနိုခါးပတ်"
+  },
+  {
+    "kanji": "辺り",
+    "hiragana": "あたり",
+    "meaning": "အနီးအနား"
+  },
+  {
+    "kanji": "図",
+    "hiragana": "ず",
+    "meaning": "ပုံ"
+  },
+  {
+    "kanji": "歩道",
+    "hiragana": "ほどう",
+    "meaning": "လူသွားလမ်း"
+  },
+  {
+    "kanji": "減る",
+    "hiragana": "へる",
+    "meaning": "လျော့နည်းသည်"
+  },
+  {
+    "kanji": "打つ",
+    "hiragana": "うつ",
+    "meaning": "ထုသည်၊ ရိုက်သည်"
+  },
+  {
+    "kanji": "性格",
+    "hiragana": "せいかく",
+    "meaning": "အကျင့်စရိုက်"
+  }
+]
