@@ -633,5 +633,25 @@
     "kanji": "性格",
     "hiragana": "せいかく",
     "meaning": "အကျင့်စရိုက်"
+  },
+  {
+    "kanji":"件",
+    "hiragana":"けん",
+    "meaning":"အကြောင်းအရာ"
+  },
+  {
+    "kanji":"疑問",
+    "hiragana":"ぎもん",
+    "meaning":"သံသယ၊ မေးခွန်း"
+  },
+  {
+    "kanji":"応募",
+    "hiragana":"おうぼ",
+    "meaning":"လျှောက်လွှာ"
+  },
+  {
+    "kanji":"奨学金",
+    "hiragana":"しょうがくきん",
+    "meaning":"ပညာသင်ဆု"
   }
 ]
