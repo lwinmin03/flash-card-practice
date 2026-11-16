@@ -1,10 +1,12 @@
 import kanjiN3 from "@/data/kanji.json";
+import n3Goi from "@/data/n3_goi_myanmar_batch1.json";
 import type { Card, Deck, DeckSummary } from "@/lib/types";
 
 type RawCard = {
   kanji?: unknown;
   hiragana?: unknown;
   meaning?: unknown;
+  meaning_mm?: unknown;
 };
 
 type DeckDefinition = {
@@ -19,10 +21,14 @@ type DeckDefinition = {
  * Deck registry.
  *
  * To add another level later:
- *   1. Put the JSON file in `data/` using the same shape
- *      ({ "kanji": "...", "hiragana": "...", "meaning": "..." }).
+ *   1. Put the JSON file in `data/`.
  *   2. Import it at the top of this file.
  *   3. Add an entry to DEFINITIONS below.
+ *
+ * Two file shapes are supported and can be mixed across decks:
+ *   - A flat array: [{ "kanji": "…", "hiragana": "…", "meaning": "…" }]
+ *   - A grouped object: { "nouns": [...], "verbs": [...], … } (e.g. goi decks),
+ *     which is flattened in group order.
  *
  * The home screen and study routes pick it up automatically.
  */
@@ -34,21 +40,39 @@ const DEFINITIONS: DeckDefinition[] = [
     description: "Kanji & vocabulary",
     raw: kanjiN3,
   },
+  {
+    id: "n3-goi",
+    level: "N3",
+    title: "JLPT N3 語彙",
+    description: "Vocabulary · Myanmar meanings",
+    raw: n3Goi,
+  },
 ];
 
 function text(value: unknown): string {
   return typeof value === "string" ? value.trim() : "";
 }
 
-function normalizeCards(raw: unknown): Card[] {
-  if (!Array.isArray(raw)) return [];
+/**
+ * Accepts either a flat card array or a grouped object
+ * ({ nouns: [...], verbs: [...], ... }), flattening groups in file order.
+ */
+function cardEntries(raw: unknown): RawCard[] {
+  if (Array.isArray(raw)) return raw as RawCard[];
+  if (!raw || typeof raw !== "object") return [];
 
+  return Object.values(raw).flatMap((group) =>
+    Array.isArray(group) ? (group as RawCard[]) : [],
+  );
+}
+
+function normalizeCards(raw: unknown): Card[] {
   const occurrences = new Map<string, number>();
 
-  return raw.flatMap((entry: RawCard) => {
+  return cardEntries(raw).flatMap((entry) => {
     const kanji = text(entry?.kanji);
     const hiragana = text(entry?.hiragana);
-    const meaning = text(entry?.meaning);
+    const meaning = text(entry?.meaning) || text(entry?.meaning_mm);
 
     if (!kanji || !hiragana || !meaning) return [];
 

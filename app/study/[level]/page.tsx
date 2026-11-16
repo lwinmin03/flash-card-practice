@@ -25,7 +25,7 @@ export async function generateMetadata({
 
   return {
     title: deck.title,
-    description: `Study ${deck.cards.length} ${deck.level} kanji cards.`,
+    description: `Study ${deck.cards.length} ${deck.level} cards.`,
   };
 }
 

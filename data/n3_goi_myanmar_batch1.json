@@ -1,0 +1,416 @@
+{
+  "nouns": [
+    {
+      "kanji": "規則",
+      "hiragana": "きそく",
+      "meaning_mm": "စည်းမျဉ်းစည်းကမ်း"
+    },
+    {
+      "kanji": "計画",
+      "hiragana": "けいかく",
+      "meaning_mm": "အစီအစဉ်"
+    },
+    {
+      "kanji": "健康",
+      "hiragana": "けんこう",
+      "meaning_mm": "ကျန်းမာရေး"
+    },
+    {
+      "kanji": "建設",
+      "hiragana": "けんせつ",
+      "meaning_mm": "ဆောက်လုပ်ရေး"
+    },
+    {
+      "kanji": "現在",
+      "hiragana": "げんざい",
+      "meaning_mm": "လက်ရှိအချိန်"
+    },
+    {
+      "kanji": "期間",
+      "hiragana": "きかん",
+      "meaning_mm": "အချိန်ကာလ"
+    },
+    {
+      "kanji": "幸福",
+      "hiragana": "こうふく",
+      "meaning_mm": "ပျော်ရွှင်ခြင်း"
+    },
+    {
+      "kanji": "工事",
+      "hiragana": "こうじ",
+      "meaning_mm": "ဆောက်လုပ်ရေး"
+    },
+    {
+      "kanji": "効果",
+      "hiragana": "こうか",
+      "meaning_mm": "ရလဒ်"
+    },
+    {
+      "kanji": "広告",
+      "hiragana": "こうこく",
+      "meaning_mm": "ကြော်ငြာ"
+    },
+    {
+      "kanji": "合同",
+      "hiragana": "ごうどう",
+      "meaning_mm": "ပူးပေါင်းခြင်း"
+    },
+    {
+      "kanji": "支援",
+      "hiragana": "しえん",
+      "meaning_mm": "ထောက်ပံ့မှု"
+    },
+    {
+      "kanji": "資源",
+      "hiragana": "しげん",
+      "meaning_mm": "သဘာဝသယံဇာတ"
+    },
+    {
+      "kanji": "実験",
+      "hiragana": "じっけん",
+      "meaning_mm": "စမ်းသပ်မှု"
+    },
+    {
+      "kanji": "実際",
+      "hiragana": "じっさい",
+      "meaning_mm": "လက်တွေ့အမှန်တကယ်"
+    },
+    {
+      "kanji": "実施",
+      "hiragana": "じっし",
+      "meaning_mm": "အကောင်အထည်ဖော်မှု"
+    },
+    {
+      "kanji": "証拠",
+      "hiragana": "しょうこ",
+      "meaning_mm": "သက်သေအထောက်အထား"
+    },
+    {
+      "kanji": "賞金",
+      "hiragana": "しょうきん",
+      "meaning_mm": "ဆုကြေးငွေ"
+    },
+    {
+      "kanji": "選挙",
+      "hiragana": "せんきょ",
+      "meaning_mm": "ရွေးကောက်ပွဲ"
+    },
+    {
+      "kanji": "戦争",
+      "hiragana": "せんそう",
+      "meaning_mm": "စစ်ပွဲ"
+    },
+    {
+      "kanji": "安全",
+      "hiragana": "あんぜん",
+      "meaning_mm": "လုံခြုံ"
+    },
+    {
+      "kanji": "田舎",
+      "hiragana": "いなか",
+      "meaning_mm": "တောရွာ"
+    },
+    {
+      "kanji": "普通",
+      "hiragana": "ふつう",
+      "meaning_mm": "ရိုးရိုးပုံမှန်"
+    },
+    {
+      "kanji": "自然",
+      "hiragana": "しぜん",
+      "meaning_mm": "သဘာဝ"
+    },
+    {
+      "kanji": "種類",
+      "hiragana": "しゅるい",
+      "meaning_mm": "အမျိုးအစား"
+    },
+    {
+      "kanji": "結果",
+      "hiragana": "けっか",
+      "meaning_mm": "ရလဒ်"
+    },
+    {
+      "kanji": "準備",
+      "hiragana": "じゅんび",
+      "meaning_mm": "ပြင်ဆင်ခြင်း"
+    },
+    {
+      "kanji": "経験",
+      "hiragana": "けいけん",
+      "meaning_mm": "အတွေ့အကြုံ"
+    },
+    {
+      "kanji": "説明",
+      "hiragana": "せつめい",
+      "meaning_mm": "ရှင်းလင်းချက်"
+    },
+    {
+      "kanji": "参加",
+      "hiragana": "さんか",
+      "meaning_mm": "ပါဝင်ခြင်း"
+    },
+    {
+      "kanji": "選択",
+      "hiragana": "せんたく",
+      "meaning_mm": "ရွေးချယ်မှု"
+    },
+    {
+      "kanji": "運転",
+      "hiragana": "うんてん",
+      "meaning_mm": "မောင်းနှင်ခြင်း"
+    },
+    {
+      "kanji": "到着",
+      "hiragana": "とうちゃく",
+      "meaning_mm": "ဆိုက်ရောက်ခြင်း"
+    },
+    {
+      "kanji": "予約",
+      "hiragana": "よやく",
+      "meaning_mm": "ကြိုတင်ထားခြင်း"
+    },
+    {
+      "kanji": "同僚",
+      "hiragana": "どうりょう",
+      "meaning_mm": "လုပ်ဖော်ကိုင်ဖက်"
+    },
+    {
+      "kanji": "安心",
+      "hiragana": "あんしん",
+      "meaning_mm": "စိတ်အေးခြင်း"
+    },
+    {
+      "kanji": "案内",
+      "hiragana": "あんない",
+      "meaning_mm": "လမ်းညွှန်ပြခြင်း"
+    },
+    {
+      "kanji": "出発",
+      "hiragana": "しゅっぱつ",
+      "meaning_mm": "ထွက်ခွာသည်"
+    },
+    {
+      "kanji": "相談",
+      "hiragana": "そうだん",
+      "meaning_mm": "တိုင်ပင်ဆွေးနွေးခြင်း"
+    },
+    {
+      "kanji": "交通",
+      "hiragana": "こうつう",
+      "meaning_mm": "လမ်းပန်းဆက်သွယ်ရေး"
+    },
+    {
+      "kanji": "満点",
+      "hiragana": "まんてん",
+      "meaning_mm": "အမှတ်ပြည့်"
+    },
+    {
+      "kanji": "目標",
+      "hiragana": "もくひょう",
+      "meaning_mm": "ပန်းတိုင်"
+    },
+    {
+      "kanji": "乾燥",
+      "hiragana": "かんそう",
+      "meaning_mm": "ခြောက်သွေ့သည်"
+    },
+    {
+      "kanji": "沸騰",
+      "hiragana": "ふっとう",
+      "meaning_mm": "ဆူပွက်သည်"
+    },
+    {
+      "kanji": "歓迎",
+      "hiragana": "かんげい",
+      "meaning_mm": "ကြိုဆိုသည်"
+    },
+    {
+      "kanji": "感激",
+      "hiragana": "かんげき",
+      "meaning_mm": "စိတ်ထိလှုပ်ရှားသည်"
+    },
+    {
+      "kanji": "就業",
+      "hiragana": "しゅうぎょう",
+      "meaning_mm": "အလုပ်ဝင်သည်"
+    },
+    {
+      "kanji": "締め切り",
+      "hiragana": "しめきり",
+      "meaning_mm": "နောက်ဆုံးပိတ်ရက်"
+    },
+    {
+      "kanji": "通訳",
+      "hiragana": "つうやく",
+      "meaning_mm": "ဘာသာပြန်သည်"
+    },
+    {
+      "kanji": "合図",
+      "hiragana": "あいず",
+      "meaning_mm": "အချက်ပြသည်"
+    },
+    {
+      "kanji": "秘密",
+      "hiragana": "ひみつ",
+      "meaning_mm": "လျှို့ဝှက်ချက်"
+    },
+    {
+      "kanji": "事情",
+      "hiragana": "じじょう",
+      "meaning_mm": "အခြေအနေ"
+    },
+    {
+      "kanji": "希望",
+      "hiragana": "きぼう",
+      "meaning_mm": "မျှော်လင့်ချက်"
+    },
+    {
+      "kanji": "配達",
+      "hiragana": "はいたつ",
+      "meaning_mm": "ပို့ဆောင်ခြင်း"
+    },
+    {
+      "kanji": "知識",
+      "hiragana": "ちしき",
+      "meaning_mm": "ဗဟုသုတ"
+    },
+    {
+      "kanji": "訪問",
+      "hiragana": "ほうもん",
+      "meaning_mm": "အလည်သွားသည်"
+    },
+    {
+      "kanji": "送信",
+      "hiragana": "そうしん",
+      "meaning_mm": "ပေးပို့သည်"
+    },
+    {
+      "kanji": "比較",
+      "hiragana": "ひかく",
+      "meaning_mm": "နှိုင်းယှဉ်သည်"
+    },
+    {
+      "kanji": "文句",
+      "hiragana": "もんく",
+      "meaning_mm": "မကျေနပ်ချက်/ပြောစရာ"
+    },
+    {
+      "kanji": "失礼",
+      "hiragana": "しつれい",
+      "meaning_mm": "ရိုင်းပြသော"
+    },
+    {
+      "kanji": "演説",
+      "hiragana": "えんぜつ",
+      "meaning_mm": "ဟောပြောခြင်း"
+    },
+    {
+      "kanji": "意志",
+      "hiragana": "いし",
+      "meaning_mm": "စိတ်ဆန္ဒ"
+    },
+    {
+      "kanji": "感じがする",
+      "hiragana": "かんじがする",
+      "meaning_mm": "ခံစားရသည်"
+    },
+    {
+      "kanji": "家賃",
+      "hiragana": "やちん",
+      "meaning_mm": "အိမ်ငှားခ"
+    },
+    {
+      "kanji": "応援",
+      "hiragana": "おうえん",
+      "meaning_mm": "အားပေးသည်"
+    },
+    {
+      "kanji": "期待",
+      "hiragana": "きたい",
+      "meaning_mm": "မျှော်လင့်သည်"
+    }
+  ],
+  "verbs": [
+    {
+      "kanji": "寄る",
+      "hiragana": "よる",
+      "meaning_mm": "လမ်းကြုံဝင်သည်"
+    },
+    {
+      "kanji": "重ねる",
+      "hiragana": "かさねる",
+      "meaning_mm": "ထပ်သည်"
+    },
+    {
+      "kanji": "信じる",
+      "hiragana": "しんじる",
+      "meaning_mm": "ယုံကြည်သည်"
+    },
+    {
+      "kanji": "溶ける",
+      "hiragana": "とける",
+      "meaning_mm": "အရည်ပျော်သည်"
+    },
+    {
+      "kanji": "受け取る",
+      "hiragana": "うけとる",
+      "meaning_mm": "လက်ခံရရှိသည်"
+    },
+    {
+      "kanji": "囲まれる",
+      "hiragana": "かこまれる",
+      "meaning_mm": "ဝန်းရံသည်"
+    },
+    {
+      "kanji": "縛る",
+      "hiragana": "しばる",
+      "meaning_mm": "ချည်နှောင်သည်"
+    }
+  ],
+  "i_adjectives": [
+    {
+      "kanji": "面倒臭い",
+      "hiragana": "めんどうくさい",
+      "meaning_mm": "အလုပ်ရှုပ်သော"
+    }
+  ],
+  "na_adjectives": [
+    {
+      "kanji": "自動的",
+      "hiragana": "じどうてき",
+      "meaning_mm": "အလိုအလျောက်"
+    },
+    {
+      "kanji": "新鮮な",
+      "hiragana": "しんせんな",
+      "meaning_mm": "လတ်ဆတ်သော"
+    },
+    {
+      "kanji": "丁寧",
+      "hiragana": "ていねい",
+      "meaning_mm": "ယဉ်ကျေးသော"
+    },
+    {
+      "kanji": "無駄な",
+      "hiragana": "むだな",
+      "meaning_mm": "အလဟဿဖြစ်သော"
+    },
+    {
+      "kanji": "貧乏な",
+      "hiragana": "びんぼうな",
+      "meaning_mm": "ဆင်းရဲသော"
+    },
+    {
+      "kanji": "立派な",
+      "hiragana": "りっぱな",
+      "meaning_mm": "ခန့်ညားသော"
+    }
+  ],
+  "adverbs": [],
+  "katakana": [],
+  "onomatopoeia": [],
+  "expressions": [],
+  "similar_meanings": [],
+  "_source_note": "Includes entries 1–80 from the main vocabulary list (PDF pages 3–6). Entries 21–80 added in this batch. Myanmar meanings are transcribed from the PDF; verify any wording where the scan is unclear."
+}
