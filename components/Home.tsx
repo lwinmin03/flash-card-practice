@@ -72,7 +72,7 @@ export default function Home({ decks }: HomeProps) {
             </span>
             <div>
               <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-muted">
-                Kanji practice
+                Japanese practice
               </p>
               <h1 className="mt-0.5 text-2xl font-semibold tracking-tight">
                 Kanji Cards
@@ -213,7 +213,7 @@ function DeckCard({
           aria-hidden="true"
           className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-accent-soft font-kanji text-lg font-semibold text-accent"
         >
-          {deck.level}
+          {deck.kind === "grammar" ? "文法" : deck.level}
         </span>
 
         <div className="min-w-0 flex-1">

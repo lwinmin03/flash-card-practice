@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Flashcard from "@/components/Flashcard";
+import GrammarFlashcard from "@/components/GrammarFlashcard";
 import { cn } from "@/lib/cn";
 import {
   getCardProgress,
@@ -12,7 +13,7 @@ import {
   type DeckStats,
   type ProgressStore,
 } from "@/lib/progress";
-import type { Deck, StudyMode } from "@/lib/types";
+import type { CardPrompt, Deck, StudyMode } from "@/lib/types";
 
 type StudySessionProps = {
   deck: Deck;
@@ -29,6 +30,25 @@ const secondaryButton =
 
 const iconButton =
   "grid h-10 w-10 shrink-0 place-items-center rounded-full border border-line bg-surface text-muted transition hover:border-accent/40 hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 disabled:pointer-events-none disabled:opacity-40";
+
+const PROMPT_STORAGE_PREFIX = "kanji-cards.prompt.";
+
+function readPrompt(deckId: string, fallback: CardPrompt): CardPrompt {
+  try {
+    const stored = window.localStorage.getItem(PROMPT_STORAGE_PREFIX + deckId);
+    return stored === "kanji" || stored === "hiragana" ? stored : fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function savePrompt(deckId: string, prompt: CardPrompt) {
+  try {
+    window.localStorage.setItem(PROMPT_STORAGE_PREFIX + deckId, prompt);
+  } catch {
+    // Private mode or a full quota: the toggle still works for this session.
+  }
+}
 
 function shuffled<T>(values: readonly T[]): T[] {
   const array = [...values];
@@ -98,6 +118,9 @@ function Session({
   const [cursor, setCursor] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [results, setResults] = useState<SessionResults>({});
+  const [prompt, setPrompt] = useState<CardPrompt>(() =>
+    readPrompt(deck.id, deck.defaultPrompt),
+  );
 
   const cardIds = useMemo(() => deck.cards.map((card) => card.id), [deck.cards]);
   const stats = useMemo(
@@ -121,6 +144,15 @@ function Session({
     setFlipped(false);
     setCursor((value) => Math.max(0, value - 1));
   }, []);
+
+  const changePrompt = useCallback(
+    (next: CardPrompt) => {
+      setPrompt(next);
+      setFlipped(false);
+      savePrompt(deck.id, next);
+    },
+    [deck.id],
+  );
 
   const grade = useCallback(
     (status: CardStatus) => {
@@ -221,14 +253,30 @@ function Session({
             </span>
           </div>
 
-          <Flashcard
-            key={currentCard.id}
-            card={currentCard}
-            level={deck.level}
-            flipped={flipped}
-            status={currentStatus}
-            onToggle={() => setFlipped((value) => !value)}
-          />
+          {deck.kind === "grammar" ? null : (
+            <PromptSwitch value={prompt} onChange={changePrompt} />
+          )}
+
+          {currentCard.kind === "grammar" ? (
+            <GrammarFlashcard
+              key={currentCard.id}
+              card={currentCard}
+              level={deck.level}
+              flipped={flipped}
+              status={currentStatus}
+              onToggle={() => setFlipped((value) => !value)}
+            />
+          ) : (
+            <Flashcard
+              key={currentCard.id}
+              card={currentCard}
+              level={deck.level}
+              prompt={prompt}
+              flipped={flipped}
+              status={currentStatus}
+              onToggle={() => setFlipped((value) => !value)}
+            />
+          )}
 
           <div className="mt-4 shrink-0">
             {flipped ? (
@@ -356,6 +404,67 @@ function StudyFrame({
         {children}
       </main>
     </div>
+  );
+}
+
+function PromptSwitch({
+  value,
+  onChange,
+}: {
+  value: CardPrompt;
+  onChange: (prompt: CardPrompt) => void;
+}) {
+  return (
+    <div
+      role="group"
+      aria-label="Card direction"
+      className="mb-3 grid grid-cols-2 gap-1 rounded-full border border-line bg-surface p-1"
+    >
+      <PromptOption
+        active={value === "kanji"}
+        label="漢字 → かな"
+        description="Show kanji on the front, reading and meaning on the back"
+        onClick={() => onChange("kanji")}
+      />
+      <PromptOption
+        active={value === "hiragana"}
+        label="かな → 漢字"
+        description="Show hiragana on the front, kanji and meaning on the back"
+        onClick={() => onChange("hiragana")}
+      />
+    </div>
+  );
+}
+
+function PromptOption({
+  active,
+  label,
+  description,
+  onClick,
+}: {
+  active: boolean;
+  label: string;
+  description: string;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      aria-pressed={active}
+      aria-label={description}
+      title={description}
+      className={cn(
+        "inline-flex h-8 items-center justify-center rounded-full text-[11px] font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60",
+        active
+          ? "bg-ink text-canvas"
+          : "text-muted hover:bg-canvas hover:text-ink",
+      )}
+    >
+      <span aria-hidden="true" lang="ja" className="font-kanji">
+        {label}
+      </span>
+    </button>
   );
 }
 

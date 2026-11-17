@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     template: "%s · Kanji Cards",
   },
   description:
-    "A mobile-first JLPT kanji flashcard app. Review readings and meanings one card at a time.",
+    "A mobile-first JLPT flashcard app for kanji, vocabulary, and grammar review with example sentences.",
   applicationName: "Kanji Cards",
   appleWebApp: {
     capable: true,

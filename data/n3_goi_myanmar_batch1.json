@@ -329,6 +329,240 @@
       "kanji": "期待",
       "hiragana": "きたい",
       "meaning_mm": "မျှော်လင့်သည်"
+    },
+    {
+      "number": 84,
+      "kanji": "家内",
+      "hiragana": "かない",
+      "meaning_mm": "ဇနီး"
+    },
+    {
+      "number": 85,
+      "kanji": "発生",
+      "hiragana": "はっせい",
+      "meaning_mm": "ဖြစ်ပေါ်သည်"
+    },
+    {
+      "number": 86,
+      "kanji": "登場",
+      "hiragana": "とうじょう",
+      "meaning_mm": "ပေါ်လာသည်"
+    },
+    {
+      "number": 87,
+      "kanji": "納得",
+      "hiragana": "なっとく",
+      "meaning_mm": "သဘောပေါက်လက်ခံသည်"
+    },
+    {
+      "number": 88,
+      "kanji": "準備",
+      "hiragana": "じゅんび",
+      "meaning_mm": "ပြင်ဆင်သည်"
+    },
+    {
+      "number": 92,
+      "kanji": "申込書",
+      "hiragana": "もうしこみしょ",
+      "meaning_mm": "လျှောက်လွှာ"
+    },
+    {
+      "number": 94,
+      "kanji": "命令",
+      "hiragana": "めいれい",
+      "meaning_mm": "အမိန့်ပေးသည်"
+    },
+    {
+      "number": 95,
+      "kanji": "主張",
+      "hiragana": "しゅちょう",
+      "meaning_mm": "အဆိုပြုသည်"
+    },
+    {
+      "number": 97,
+      "kanji": "注文",
+      "hiragana": "ちゅうもん",
+      "meaning_mm": "အော်ဒါမှာသည်"
+    },
+    {
+      "number": 101,
+      "kanji": "印象",
+      "hiragana": "いんしょう",
+      "meaning_mm": "ထင်မြင်ချက်"
+    },
+    {
+      "number": 102,
+      "kanji": "興味",
+      "hiragana": "きょうみ",
+      "meaning_mm": "စိတ်ဝင်စားမှု"
+    },
+    {
+      "number": 103,
+      "kanji": "証明",
+      "hiragana": "しょうめい",
+      "meaning_mm": "သက်သေပြသည်"
+    },
+    {
+      "number": 104,
+      "kanji": "検査",
+      "hiragana": "けんさ",
+      "meaning_mm": "စစ်ဆေးမှု"
+    },
+    {
+      "number": 105,
+      "kanji": "流行",
+      "hiragana": "りゅうこう",
+      "meaning_mm": "ခေတ်စားမှု"
+    },
+    {
+      "number": 106,
+      "kanji": "一流",
+      "hiragana": "いちりゅう",
+      "meaning_mm": "ပထမတန်းစား"
+    },
+    {
+      "number": 109,
+      "kanji": "否定",
+      "hiragana": "ひてい",
+      "meaning_mm": "ငြင်းဆိုသည်"
+    },
+    {
+      "number": 110,
+      "kanji": "傷",
+      "hiragana": "きず",
+      "meaning_mm": "ဒဏ်ရာ"
+    },
+    {
+      "number": 111,
+      "kanji": "故障",
+      "hiragana": "こしょう",
+      "meaning_mm": "ပျက်စီးမှု၊ ချို့ယွင်းမှု"
+    },
+    {
+      "number": 112,
+      "kanji": "外食",
+      "hiragana": "がいしょく",
+      "meaning_mm": "အပြင်မှာ ထွက်စားသည်"
+    },
+    {
+      "number": 115,
+      "kanji": "順番",
+      "hiragana": "じゅんばん",
+      "meaning_mm": "အစဉ်လိုက်အလှည့်"
+    },
+    {
+      "number": 117,
+      "kanji": "栄養",
+      "hiragana": "えいよう",
+      "meaning_mm": "အာဟာရ"
+    },
+    {
+      "number": 119,
+      "kanji": "渋滞",
+      "hiragana": "じゅうたい",
+      "meaning_mm": "ယာဉ်ကြောပိတ်ဆို့မှု"
+    },
+    {
+      "number": 120,
+      "kanji": "噂",
+      "hiragana": "うわさ",
+      "meaning_mm": "ကောလာဟလ"
+    },
+    {
+      "number": 121,
+      "kanji": "退屈",
+      "hiragana": "たいくつ",
+      "meaning_mm": "ပျင်းရိငြီးငွေ့ခြင်း"
+    },
+    {
+      "number": 125,
+      "kanji": "宣伝",
+      "hiragana": "せんでん",
+      "meaning_mm": "ကြော်ငြာသည်"
+    },
+    {
+      "number": 126,
+      "kanji": "青年",
+      "hiragana": "せいねん",
+      "meaning_mm": "လူငယ်"
+    },
+    {
+      "number": 128,
+      "kanji": "市場",
+      "hiragana": "しじょう",
+      "meaning_mm": "ဈေးကွက်"
+    },
+    {
+      "number": 129,
+      "kanji": "航空",
+      "hiragana": "こうくう",
+      "meaning_mm": "လေကြောင်း"
+    },
+    {
+      "number": 130,
+      "kanji": "笑顔",
+      "hiragana": "えがお",
+      "meaning_mm": "အပြုံးမျက်နှာ"
+    },
+    {
+      "number": 131,
+      "kanji": "学習",
+      "hiragana": "がくしゅう",
+      "meaning_mm": "လေ့လာသင်ယူခြင်း"
+    },
+    {
+      "number": 132,
+      "kanji": "金融",
+      "hiragana": "きんゆう",
+      "meaning_mm": "ဘဏ္ဍာရေးဆိုင်ရာ"
+    },
+    {
+      "number": 133,
+      "kanji": "現象",
+      "hiragana": "げんしょう",
+      "meaning_mm": "ဖြစ်စဉ်"
+    },
+    {
+      "number": 134,
+      "kanji": "存在",
+      "hiragana": "そんざい",
+      "meaning_mm": "တည်ရှိမှု"
+    },
+    {
+      "number": 135,
+      "kanji": "戦争",
+      "hiragana": "せんそう",
+      "meaning_mm": "စစ်ပွဲ"
+    },
+    {
+      "number": 136,
+      "kanji": "老人",
+      "hiragana": "ろうじん",
+      "meaning_mm": "သက်ကြီးရွယ်အို"
+    },
+    {
+      "number": 137,
+      "kanji": "児童",
+      "hiragana": "じどう",
+      "meaning_mm": "ကလေးသူငယ်"
+    },
+    {
+      "number": 138,
+      "kanji": "犯罪",
+      "hiragana": "はんざい",
+      "meaning_mm": "ရာဇဝတ်မှု"
+    },
+    {
+      "number": 139,
+      "kanji": "事故",
+      "hiragana": "じこ",
+      "meaning_mm": "မတော်တဆမှု"
+    },
+    {
+      "number": 140,
+      "kanji": "洗剤",
+      "hiragana": "せんざい",
+      "meaning_mm": "ဆပ်ပြာမှုန့်၊ သန့်စင်ဆေး"
     }
   ],
   "verbs": [
@@ -366,6 +600,84 @@
       "kanji": "縛る",
       "hiragana": "しばる",
       "meaning_mm": "ချည်နှောင်သည်"
+    },
+    {
+      "number": 81,
+      "kanji": "干す",
+      "hiragana": "ほす",
+      "meaning_mm": "လှန်းသည်"
+    },
+    {
+      "number": 82,
+      "kanji": "迷う",
+      "hiragana": "まよう",
+      "meaning_mm": "တွေဝေသည်"
+    },
+    {
+      "number": 83,
+      "kanji": "飽きる",
+      "hiragana": "あきる",
+      "meaning_mm": "ငြီးငွေ့သည်"
+    },
+    {
+      "number": 89,
+      "kanji": "吠える",
+      "hiragana": "ほえる",
+      "meaning_mm": "ဟောင်သည်"
+    },
+    {
+      "number": 90,
+      "kanji": "怒鳴る",
+      "hiragana": "どなる",
+      "meaning_mm": "အော်ဟစ်သည်"
+    },
+    {
+      "number": 91,
+      "kanji": "追い越す",
+      "hiragana": "おいこす",
+      "meaning_mm": "ကျော်တက်သည်"
+    },
+    {
+      "number": 96,
+      "kanji": "沈む",
+      "hiragana": "しずむ",
+      "meaning_mm": "နစ်မြုပ်သည်"
+    },
+    {
+      "number": 107,
+      "kanji": "活動する",
+      "hiragana": "かつどうする",
+      "meaning_mm": "လှုပ်ရှားဆောင်ရွက်သည်"
+    },
+    {
+      "number": 108,
+      "kanji": "取り消す",
+      "hiragana": "とりけす",
+      "meaning_mm": "ပယ်ဖျက်သည်"
+    },
+    {
+      "number": 113,
+      "kanji": "指導する",
+      "hiragana": "しどうする",
+      "meaning_mm": "လမ်းညွှန်သင်ကြားသည်"
+    },
+    {
+      "number": 114,
+      "kanji": "伸ばす",
+      "hiragana": "のばす",
+      "meaning_mm": "ဆန့်ထုတ်သည်"
+    },
+    {
+      "number": 118,
+      "kanji": "埋める",
+      "hiragana": "うめる",
+      "meaning_mm": "မြှုပ်သည်"
+    },
+    {
+      "number": 124,
+      "kanji": "畳む",
+      "hiragana": "たたむ",
+      "meaning_mm": "ခေါက်သည်"
     }
   ],
   "i_adjectives": [
@@ -373,6 +685,12 @@
       "kanji": "面倒臭い",
       "hiragana": "めんどうくさい",
       "meaning_mm": "အလုပ်ရှုပ်သော"
+    },
+    {
+      "number": 100,
+      "kanji": "偉い",
+      "hiragana": "えらい",
+      "meaning_mm": "လေးစားထိုက်သော၊ ကြီးမြတ်သော"
     }
   ],
   "na_adjectives": [
@@ -405,12 +723,55 @@
       "kanji": "立派な",
       "hiragana": "りっぱな",
       "meaning_mm": "ခန့်ညားသော"
+    },
+    {
+      "number": 93,
+      "kanji": "複雑な",
+      "hiragana": "ふくざつな",
+      "meaning_mm": "ရှုပ်ထွေးသော"
+    },
+    {
+      "number": 116,
+      "kanji": "代表的な",
+      "hiragana": "だいひょうてきな",
+      "meaning_mm": "ကိုယ်စားပြုသော"
+    },
+    {
+      "number": 122,
+      "kanji": "苦手な",
+      "hiragana": "にがてな",
+      "meaning_mm": "မကျွမ်းကျင်သော၊ မနှစ်သက်သော"
+    },
+    {
+      "number": 123,
+      "kanji": "不安な",
+      "hiragana": "ふあんな",
+      "meaning_mm": "စိတ်မအေးသော၊ စိုးရိမ်သော"
+    },
+    {
+      "number": 127,
+      "kanji": "重要",
+      "hiragana": "じゅうよう",
+      "meaning_mm": "အရေးကြီးသော"
     }
   ],
   "adverbs": [],
   "katakana": [],
   "onomatopoeia": [],
-  "expressions": [],
+  "expressions": [
+    {
+      "number": 98,
+      "kanji": "お金を貯める",
+      "hiragana": "おかねをためる",
+      "meaning_mm": "ပိုက်ဆံစုသည်"
+    },
+    {
+      "number": 99,
+      "kanji": "お金を稼ぐ",
+      "hiragana": "おかねをかせぐ",
+      "meaning_mm": "ပိုက်ဆံရှာသည်"
+    }
+  ],
   "similar_meanings": [],
-  "_source_note": "Includes entries 1–80 from the main vocabulary list (PDF pages 3–6). Entries 21–80 added in this batch. Myanmar meanings are transcribed from the PDF; verify any wording where the scan is unclear."
+  "_source_note": "Consolidated entries 1–140 from the main vocabulary list. Entries 81–140 are transcribed from PDF pages 7–9. Some Myanmar glosses are concise translations of the visible source meanings."
 }

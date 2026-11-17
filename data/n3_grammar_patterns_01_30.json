@@ -1,0 +1,524 @@
+{
+  "title": "JLPT N3 Grammar Patterns 1–30",
+  "source": "N3 old question grammar pattern.pdf",
+  "source_scope": "Patterns 1–30 in the order shown on pages 1–2 of the uploaded PDF.",
+  "language": {
+    "grammar": "Japanese",
+    "meaning": "English",
+    "example_reading": "Hiragana"
+  },
+  "schema_version": "1.0",
+  "entries": [
+    {
+      "id": 1,
+      "grammar": "～と比べ（とくらべ）",
+      "meaning_en": "compared with; in comparison to",
+      "formation": [
+        "Noun + と比べ（て）"
+      ],
+      "examples": [
+        {
+          "japanese": "去年と比べて、今年は暑いです。",
+          "hiragana": "きょねんとくらべて、ことしはあついです。",
+          "english": "Compared with last year, this year is hot."
+        }
+      ],
+      "notes": "Used to compare two people, things, or situations."
+    },
+    {
+      "id": 2,
+      "grammar": "～たら",
+      "meaning_en": "if; when; after",
+      "formation": [
+        "Verb た-form + ら",
+        "い-adjective かった + ら",
+        "な-adjective / noun + だったら"
+      ],
+      "examples": [
+        {
+          "japanese": "家に帰ったら、電話してください。",
+          "hiragana": "いえにかえったら、でんわしてください。",
+          "english": "When you get home, please call me."
+        }
+      ],
+      "notes": "Can express a condition, a future event, or an action that happens after another action."
+    },
+    {
+      "id": 3,
+      "grammar": "～だから",
+      "meaning_en": "because; so",
+      "formation": [
+        "Noun + だから",
+        "な-adjective + だから",
+        "Plain form + だから (casual explanation)"
+      ],
+      "examples": [
+        {
+          "japanese": "今日は休みだから、家にいます。",
+          "hiragana": "きょうはやすみだから、いえにいます。",
+          "english": "Because today is a day off, I will stay home."
+        }
+      ],
+      "notes": "だ is used before から with nouns and な-adjectives. い-adjectives use から directly, e.g. 忙しいから."
+    },
+    {
+      "id": 4,
+      "grammar": "～がっている",
+      "meaning_en": "seems to feel; shows signs of wanting or feeling",
+      "formation": [
+        "い-adjective (remove い) + がっている",
+        "な-adjective stem + がっている",
+        "欲しい → 欲しがっている"
+      ],
+      "examples": [
+        {
+          "japanese": "妹は新しい服を欲しがっています。",
+          "hiragana": "いもうとはあたらしいふくをほしがっています。",
+          "english": "My younger sister seems to want new clothes."
+        }
+      ],
+      "notes": "Often describes another person's observable feelings or desires, rather than the speaker's own internal feelings."
+    },
+    {
+      "id": 5,
+      "grammar": "～させていただけませんか",
+      "meaning_en": "Would you allow me to...?; May I have your permission to...?",
+      "formation": [
+        "Verb causative-て form + いただけませんか"
+      ],
+      "examples": [
+        {
+          "japanese": "明日、休ませていただけませんか。",
+          "hiragana": "あした、やすませていただけませんか。",
+          "english": "Would you allow me to take tomorrow off?"
+        }
+      ],
+      "notes": "A very polite way to ask permission to do something."
+    },
+    {
+      "id": 6,
+      "grammar": "～の近くに（のちかくに）",
+      "meaning_en": "near; close to",
+      "formation": [
+        "Noun + の近くに"
+      ],
+      "examples": [
+        {
+          "japanese": "駅の近くに銀行があります。",
+          "hiragana": "えきのちかくにぎんこうがあります。",
+          "english": "There is a bank near the station."
+        }
+      ],
+      "notes": "近く means nearby. に marks the location where something exists or happens."
+    },
+    {
+      "id": 7,
+      "grammar": "～てから",
+      "meaning_en": "after doing; after",
+      "formation": [
+        "Verb て-form + から"
+      ],
+      "examples": [
+        {
+          "japanese": "ご飯を食べてから、勉強します。",
+          "hiragana": "ごはんをたべてから、べんきょうします。",
+          "english": "I will study after eating."
+        }
+      ],
+      "notes": "Shows that the first action is completed before the next action."
+    },
+    {
+      "id": 8,
+      "grammar": "～続ける（つづける）",
+      "meaning_en": "continue doing",
+      "formation": [
+        "Verb ます-stem + 続ける"
+      ],
+      "examples": [
+        {
+          "japanese": "毎日、日本語を勉強し続けています。",
+          "hiragana": "まいにち、にほんごをべんきょうしつづけています。",
+          "english": "I continue studying Japanese every day."
+        }
+      ],
+      "notes": "Attach 続ける to the verb stem: 勉強します → 勉強し続ける."
+    },
+    {
+      "id": 9,
+      "grammar": "～てもおかしくない",
+      "meaning_en": "it would not be strange if; it is quite possible that",
+      "formation": [
+        "Verb て-form + もおかしくない",
+        "い-adjective くて + もおかしくない",
+        "な-adjective / noun + でもおかしくない"
+      ],
+      "examples": [
+        {
+          "japanese": "彼が怒ってもおかしくないです。",
+          "hiragana": "かれがおこってもおかしくないです。",
+          "english": "It would not be surprising if he got angry."
+        }
+      ],
+      "notes": "Expresses that a situation is understandable or reasonably possible."
+    },
+    {
+      "id": 10,
+      "grammar": "～に対して（にたいして）",
+      "meaning_en": "toward; against; in contrast to; with regard to",
+      "formation": [
+        "Noun + に対して"
+      ],
+      "examples": [
+        {
+          "japanese": "先生は学生に対して厳しいです。",
+          "hiragana": "せんせいはがくせいにたいしてきびしいです。",
+          "english": "The teacher is strict toward the students."
+        }
+      ],
+      "notes": "Can indicate the target of an action or attitude, and can also introduce a contrast."
+    },
+    {
+      "id": 11,
+      "grammar": "～少しも～ない（すこしも～ない）",
+      "meaning_en": "not at all; not even a little",
+      "formation": [
+        "少しも + negative expression"
+      ],
+      "examples": [
+        {
+          "japanese": "この説明は少しも分かりません。",
+          "hiragana": "このせつめいはすこしもわかりません。",
+          "english": "I do not understand this explanation at all."
+        }
+      ],
+      "notes": "少しも is normally used with a negative expression."
+    },
+    {
+      "id": 12,
+      "grammar": "～ても不思議ではない（てもふしぎではない）",
+      "meaning_en": "it is not surprising if; it would be no wonder if",
+      "formation": [
+        "Verb て-form + も不思議ではない",
+        "い-adjective くて + も不思議ではない",
+        "な-adjective / noun + でも不思議ではない"
+      ],
+      "examples": [
+        {
+          "japanese": "彼が合格しても不思議ではありません。",
+          "hiragana": "かれがごうかくしてもふしぎではありません。",
+          "english": "It would be no surprise if he passed."
+        }
+      ],
+      "notes": "Similar in meaning to ～てもおかしくない."
+    },
+    {
+      "id": 13,
+      "grammar": "～V辞書形＋ことができるまで",
+      "meaning_en": "until one can do; until being able to do",
+      "formation": [
+        "Verb dictionary form + ことができるまで"
+      ],
+      "examples": [
+        {
+          "japanese": "一人で料理することができるまで練習しました。",
+          "hiragana": "ひとりでりょうりすることができるまでれんしゅうしました。",
+          "english": "I practiced until I could cook by myself."
+        }
+      ],
+      "notes": "The PDF lists this specific pattern. The verb before こと is in dictionary form."
+    },
+    {
+      "id": 14,
+      "grammar": "～やすい",
+      "meaning_en": "easy to do; likely to",
+      "formation": [
+        "Verb ます-stem + やすい"
+      ],
+      "examples": [
+        {
+          "japanese": "この本は読みやすいです。",
+          "hiragana": "このほんはよみやすいです。",
+          "english": "This book is easy to read."
+        }
+      ],
+      "notes": "Opposite pattern: ～にくい (difficult to do)."
+    },
+    {
+      "id": 15,
+      "grammar": "～くれない？",
+      "meaning_en": "Could you...?; won't you...?",
+      "formation": [
+        "Verb て-form + くれない？"
+      ],
+      "examples": [
+        {
+          "japanese": "ちょっと手伝ってくれない？",
+          "hiragana": "ちょっとてつだってくれない？",
+          "english": "Could you help me for a moment?"
+        }
+      ],
+      "notes": "Casual request. Use more polite forms with people who require politeness."
+    },
+    {
+      "id": 16,
+      "grammar": "～ばかり",
+      "meaning_en": "only; nothing but; just",
+      "formation": [
+        "Noun + ばかり",
+        "Verb て-form + ばかりいる"
+      ],
+      "examples": [
+        {
+          "japanese": "弟はゲームばかりしています。",
+          "hiragana": "おとうとはゲームばかりしています。",
+          "english": "My younger brother does nothing but play games."
+        }
+      ],
+      "notes": "Often emphasizes that someone does one thing excessively or repeatedly."
+    },
+    {
+      "id": 17,
+      "grammar": "～にしたがって",
+      "meaning_en": "as; in accordance with; following",
+      "formation": [
+        "Verb dictionary form + にしたがって",
+        "Noun + にしたがって"
+      ],
+      "examples": [
+        {
+          "japanese": "年を取るにしたがって、体力が落ちます。",
+          "hiragana": "としをとるにしたがって、たいりょくがおちます。",
+          "english": "As people get older, their physical strength declines."
+        }
+      ],
+      "notes": "Can describe a change that occurs in parallel with another change, or acting according to a rule or instruction."
+    },
+    {
+      "id": 18,
+      "grammar": "～終わる（おわる）",
+      "meaning_en": "finish doing",
+      "formation": [
+        "Verb ます-stem + 終わる"
+      ],
+      "examples": [
+        {
+          "japanese": "宿題をやり終わりました。",
+          "hiragana": "しゅくだいをやりおわりました。",
+          "english": "I finished doing my homework."
+        }
+      ],
+      "notes": "Attach 終わる to the verb stem: 読みます → 読み終わる."
+    },
+    {
+      "id": 19,
+      "grammar": "～一方で（いっぽうで）",
+      "meaning_en": "on the other hand; whereas",
+      "formation": [
+        "Verb plain form + 一方で",
+        "い-adjective + 一方で",
+        "な-adjective + な一方で",
+        "Noun + である一方で"
+      ],
+      "examples": [
+        {
+          "japanese": "この仕事は給料が高い一方で、ストレスも多いです。",
+          "hiragana": "このしごとはきゅうりょうがたかいいっぽうで、ストレスもおおいです。",
+          "english": "This job pays well, but on the other hand, it is stressful."
+        }
+      ],
+      "notes": "Contrasts two sides or characteristics of a person, thing, or situation."
+    },
+    {
+      "id": 20,
+      "grammar": "～そうです（様態・ようたい）",
+      "meaning_en": "looks; seems; appears",
+      "formation": [
+        "Verb ます-stem + そうです",
+        "い-adjective (remove い) + そうです",
+        "な-adjective stem + そうです"
+      ],
+      "examples": [
+        {
+          "japanese": "雨が降りそうです。",
+          "hiragana": "あめがふりそうです。",
+          "english": "It looks like it is going to rain."
+        },
+        {
+          "japanese": "この料理はおいしそうです。",
+          "hiragana": "このりょうりはおいしそうです。",
+          "english": "This food looks delicious."
+        }
+      ],
+      "notes": "This is the appearance-based そうです, not the hearsay pattern. おいしい → おいしそう."
+    },
+    {
+      "id": 21,
+      "grammar": "禁止形：V辞書形＋な（きんしけい）",
+      "meaning_en": "do not; prohibition",
+      "formation": [
+        "Verb dictionary form + な"
+      ],
+      "examples": [
+        {
+          "japanese": "ここで写真を撮るな。",
+          "hiragana": "ここでしゃしんをとるな。",
+          "english": "Do not take pictures here."
+        }
+      ],
+      "notes": "A strong, direct prohibition. Avoid using it in ordinary polite conversation."
+    },
+    {
+      "id": 22,
+      "grammar": "～Vないで",
+      "meaning_en": "without doing; without (someone) doing",
+      "formation": [
+        "Verb ない-form (remove い) + で"
+      ],
+      "examples": [
+        {
+          "japanese": "朝ご飯を食べないで学校へ行きました。",
+          "hiragana": "あさごはんをたべないでがっこうへいきました。",
+          "english": "I went to school without eating breakfast."
+        }
+      ],
+      "notes": "Can describe doing one action without doing another. Context may also give it a request meaning, as in 行かないで."
+    },
+    {
+      "id": 23,
+      "grammar": "～のは",
+      "meaning_en": "the thing is; what ... is; nominalizes an action or clause",
+      "formation": [
+        "Verb plain form + のは",
+        "Adjective / noun clause + のは (as appropriate)"
+      ],
+      "examples": [
+        {
+          "japanese": "日本語を勉強するのは楽しいです。",
+          "hiragana": "にほんごをべんきょうするのはたのしいです。",
+          "english": "Studying Japanese is fun."
+        }
+      ],
+      "notes": "の turns a preceding action or clause into a noun-like expression; は marks the topic."
+    },
+    {
+      "id": 24,
+      "grammar": "～でも",
+      "meaning_en": "even; or something; for example",
+      "formation": [
+        "Noun + でも (meaning depends on context)"
+      ],
+      "examples": [
+        {
+          "japanese": "子供でも分かります。",
+          "hiragana": "こどもでもわかります。",
+          "english": "Even a child can understand."
+        },
+        {
+          "japanese": "お茶でも飲みませんか。",
+          "hiragana": "おちゃでものみませんか。",
+          "english": "Would you like some tea or something?"
+        }
+      ],
+      "notes": "The PDF gives the pattern without a subtype; the meaning depends on the sentence."
+    },
+    {
+      "id": 25,
+      "grammar": "～だろうと思う（だろうとおもう）",
+      "meaning_en": "I think probably; I suppose that",
+      "formation": [
+        "Verb plain form + だろうと思う",
+        "い-adjective + だろうと思う",
+        "な-adjective / noun + だろうと思う"
+      ],
+      "examples": [
+        {
+          "japanese": "明日は雨が降るだろうと思います。",
+          "hiragana": "あしたはあめがふるだろうとおもいます。",
+          "english": "I think it will probably rain tomorrow."
+        }
+      ],
+      "notes": "Expresses the speaker's expectation or guess."
+    },
+    {
+      "id": 26,
+      "grammar": "～にまで",
+      "meaning_en": "even to; as far as; even",
+      "formation": [
+        "Noun + にまで"
+      ],
+      "examples": [
+        {
+          "japanese": "その話は子供にまで知られています。",
+          "hiragana": "そのはなしはこどもにまでしられています。",
+          "english": "Even children know that story."
+        }
+      ],
+      "notes": "まで adds emphasis to the extent or range."
+    },
+    {
+      "id": 27,
+      "grammar": "～たり～たり",
+      "meaning_en": "doing things such as A and B",
+      "formation": [
+        "Verb た-form + り、Verb た-form + り + する"
+      ],
+      "examples": [
+        {
+          "japanese": "休みの日は映画を見たり、音楽を聞いたりします。",
+          "hiragana": "やすみのひはえいがをみたり、おんがくをきいたりします。",
+          "english": "On days off, I do things like watch movies and listen to music."
+        }
+      ],
+      "notes": "Lists representative actions; the list does not have to include every action."
+    },
+    {
+      "id": 28,
+      "grammar": "～前に（まえに）",
+      "meaning_en": "before doing; before",
+      "formation": [
+        "Verb dictionary form + 前に",
+        "Noun + の前に"
+      ],
+      "examples": [
+        {
+          "japanese": "寝る前に、歯を磨きます。",
+          "hiragana": "ねるまえに、はをみがきます。",
+          "english": "I brush my teeth before going to bed."
+        }
+      ],
+      "notes": "Use the dictionary form before 前に, not the た-form."
+    },
+    {
+      "id": 29,
+      "grammar": "～V辞書形＋ところ",
+      "meaning_en": "be just about to do",
+      "formation": [
+        "Verb dictionary form + ところです"
+      ],
+      "examples": [
+        {
+          "japanese": "今から出かけるところです。",
+          "hiragana": "いまからでかけるところです。",
+          "english": "I am just about to leave."
+        }
+      ],
+      "notes": "Describes the moment just before an action begins."
+    },
+    {
+      "id": 30,
+      "grammar": "～Vているところ",
+      "meaning_en": "be in the middle of doing",
+      "formation": [
+        "Verb て-form + いるところです"
+      ],
+      "examples": [
+        {
+          "japanese": "今、日本語を勉強しているところです。",
+          "hiragana": "いま、にほんごをべんきょうしているところです。",
+          "english": "I am in the middle of studying Japanese now."
+        }
+      ],
+      "notes": "Describes an action currently in progress. Compare Vるところ (about to do) and Vたところ (have just done)."
+    }
+  ]
+}

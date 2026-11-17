@@ -1,12 +1,14 @@
 "use client";
 
 import { cn } from "@/lib/cn";
+import StatusChip from "@/components/StatusChip";
 import type { CardStatus } from "@/lib/progress";
-import type { Card } from "@/lib/types";
+import type { CardPrompt, WordCard } from "@/lib/types";
 
 type FlashcardProps = {
-  card: Card;
+  card: WordCard;
   level: string;
+  prompt: CardPrompt;
   flipped: boolean;
   status?: CardStatus;
   onToggle: () => void;
@@ -21,13 +23,33 @@ function kanjiSizeClass(kanji: string) {
   return "text-[clamp(2.75rem,15vw,5.25rem)]";
 }
 
+/**
+ * Hiragana strings can be much longer than kanji (e.g. おかねをためる), so they
+ * need a tighter scale to stay on one or two lines inside the card.
+ */
+function hiraganaSizeClass(hiragana: string) {
+  const length = Array.from(hiragana).length;
+
+  if (length <= 3) return "text-[clamp(3.25rem,18vw,5.5rem)]";
+  if (length <= 5) return "text-[clamp(2.5rem,13vw,4rem)]";
+  if (length <= 7) return "text-[clamp(2rem,10.5vw,3.25rem)]";
+  return "text-[clamp(1.75rem,8.5vw,2.75rem)]";
+}
+
 export default function Flashcard({
   card,
   level,
+  prompt,
   flipped,
   status,
   onToggle,
 }: FlashcardProps) {
+  const isHiraganaPrompt = prompt === "hiragana";
+  const promptText = isHiraganaPrompt ? card.hiragana : card.kanji;
+  const answer = isHiraganaPrompt
+    ? `Kanji: ${card.kanji}. Meaning: ${card.meaning}`
+    : `Reading: ${card.hiragana}. Meaning: ${card.meaning}`;
+
   return (
     <div className="animate-card-in relative min-h-[240px] flex-1">
       <div className="flip-scene absolute inset-0">
@@ -36,8 +58,8 @@ export default function Flashcard({
           onClick={onToggle}
           aria-label={
             flipped
-              ? `Hide the answer for ${card.kanji}`
-              : `Reveal the answer for ${card.kanji}`
+              ? `Hide the answer for ${promptText}`
+              : `Reveal the answer for ${promptText}`
           }
           aria-pressed={flipped}
           className="block h-full w-full rounded-[1.75rem] text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 focus-visible:ring-offset-4 focus-visible:ring-offset-canvas"
@@ -66,11 +88,13 @@ export default function Flashcard({
                 <span
                   lang="ja"
                   className={cn(
-                    "relative font-kanji leading-none tracking-tight text-ink",
-                    kanjiSizeClass(card.kanji),
+                    "relative px-2 text-center font-kanji leading-tight tracking-tight text-ink [overflow-wrap:anywhere]",
+                    isHiraganaPrompt
+                      ? hiraganaSizeClass(promptText)
+                      : kanjiSizeClass(promptText),
                   )}
                 >
-                  {card.kanji}
+                  {promptText}
                 </span>
               </div>
 
@@ -89,25 +113,36 @@ export default function Flashcard({
             >
               <div className="flex items-center justify-between">
                 <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted">
-                  Reading &amp; meaning
+                  {isHiraganaPrompt ? "Kanji & meaning" : "Reading & meaning"}
                 </span>
                 <StatusChip status={status} />
               </div>
 
               <div className="flex-1 overflow-y-auto py-3">
                 <div className="flex min-h-full flex-col items-center justify-center gap-4 px-1 text-center">
-                  <span
-                    lang="ja"
-                    className="font-kanji text-2xl leading-none text-muted"
-                  >
-                    {card.kanji}
-                  </span>
-                  <span
-                    lang="ja"
-                    className="font-kanji text-[clamp(1.6rem,7vw,2.4rem)] leading-tight text-accent"
-                  >
-                    {card.hiragana}
-                  </span>
+                  {isHiraganaPrompt ? (
+                    <span
+                      lang="ja"
+                      className="font-kanji text-[clamp(1.8rem,8vw,2.75rem)] leading-tight text-accent"
+                    >
+                      {card.kanji}
+                    </span>
+                  ) : (
+                    <>
+                      <span
+                        lang="ja"
+                        className="font-kanji text-2xl leading-none text-muted"
+                      >
+                        {card.kanji}
+                      </span>
+                      <span
+                        lang="ja"
+                        className="font-kanji text-[clamp(1.6rem,7vw,2.4rem)] leading-tight text-accent"
+                      >
+                        {card.hiragana}
+                      </span>
+                    </>
+                  )}
                   <span aria-hidden="true" className="h-px w-14 bg-line" />
                   <span
                     lang="my"
@@ -127,27 +162,8 @@ export default function Flashcard({
       </div>
 
       <p className="sr-only" aria-live="polite">
-        {flipped
-          ? `Answer: ${card.hiragana}. ${card.meaning}`
-          : "Answer hidden."}
+        {flipped ? `Answer: ${answer}` : "Answer hidden."}
       </p>
     </div>
-  );
-}
-
-function StatusChip({ status }: { status?: CardStatus }) {
-  if (!status) return null;
-
-  return (
-    <span
-      className={cn(
-        "rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em]",
-        status === "known"
-          ? "bg-success-soft text-success"
-          : "bg-accent-soft text-accent",
-      )}
-    >
-      {status === "known" ? "Learned" : "Review"}
-    </span>
   );
 }
