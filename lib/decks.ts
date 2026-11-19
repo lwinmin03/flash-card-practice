@@ -13,7 +13,9 @@ import type {
 
 type RawCard = {
   kanji?: unknown;
+  word?: unknown;
   hiragana?: unknown;
+  reading?: unknown;
   meaning?: unknown;
   meaning_mm?: unknown;
 };
@@ -59,6 +61,8 @@ type DeckDefinition = {
  *     "formation": [...], "examples": [...], "notes": "…" }] }
  *
  * Meanings may use `meaning_mm` (or `myanmar` on examples) for Myanmar text.
+ * Kana-only vocabulary (katakana, onomatopoeia) may use `word`/`reading`
+ * instead of `kanji`/`hiragana`.
  *
  * The home screen and study routes pick it up automatically.
  */
@@ -121,8 +125,10 @@ function normalizeCards(raw: unknown): WordCard[] {
   const occurrences = new Map<string, number>();
 
   return cardEntries(raw).flatMap((entry) => {
-    const kanji = text(entry?.kanji);
-    const hiragana = text(entry?.hiragana);
+    // Katakana and onomatopoeia groups use `word`/`reading` instead of
+    // `kanji`/`hiragana`; both shapes become the same flashcard.
+    const kanji = text(entry?.kanji) || text(entry?.word);
+    const hiragana = text(entry?.hiragana) || text(entry?.reading);
     const meaning = text(entry?.meaning) || text(entry?.meaning_mm);
 
     if (!kanji || !hiragana || !meaning) return [];

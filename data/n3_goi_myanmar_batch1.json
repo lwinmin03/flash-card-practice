@@ -756,8 +756,520 @@
     }
   ],
   "adverbs": [],
-  "katakana": [],
-  "onomatopoeia": [],
+  "katakana": [
+    {
+      "number": 1,
+      "word": "カロリー",
+      "reading": "かろりー",
+      "meaning_mm": "ကယ်လိုရီ"
+    },
+    {
+      "number": 2,
+      "word": "アップ",
+      "reading": "あっぷ",
+      "meaning_mm": "UP / တိုးတက်ခြင်း"
+    },
+    {
+      "number": 3,
+      "word": "ユーモア",
+      "reading": "ゆーもあ",
+      "meaning_mm": "ဟာသ"
+    },
+    {
+      "number": 4,
+      "word": "ロッカー",
+      "reading": "ろっかー",
+      "meaning_mm": "LOCKER"
+    },
+    {
+      "number": 5,
+      "word": "バケツ",
+      "reading": "ばけつ",
+      "meaning_mm": "ရေပုံး"
+    },
+    {
+      "number": 6,
+      "word": "タオル",
+      "reading": "たおる",
+      "meaning_mm": "ပဝါ"
+    },
+    {
+      "number": 7,
+      "word": "リサイクル",
+      "reading": "りさいくる",
+      "meaning_mm": "ပြန်လည်အသုံးပြုခြင်း"
+    },
+    {
+      "number": 8,
+      "word": "カット",
+      "reading": "かっと",
+      "meaning_mm": "CUT / ဖြတ်တောက်သည်"
+    },
+    {
+      "number": 9,
+      "word": "キャンセル",
+      "reading": "きゃんせる",
+      "meaning_mm": "CANCEL / ပယ်ဖျက်သည်"
+    },
+    {
+      "number": 10,
+      "word": "オーバー",
+      "reading": "おーばー",
+      "meaning_mm": "OVER"
+    },
+    {
+      "number": 11,
+      "word": "プレゼント",
+      "reading": "ぷれぜんと",
+      "meaning_mm": "လက်ဆောင်"
+    },
+    {
+      "number": 12,
+      "word": "パーティー",
+      "reading": "ぱーてぃー",
+      "meaning_mm": "PARTY"
+    },
+    {
+      "number": 13,
+      "word": "チャンス",
+      "reading": "ちゃんす",
+      "meaning_mm": "အခွင့်အရေး"
+    },
+    {
+      "number": 14,
+      "word": "メッセージ",
+      "reading": "めっせーじ",
+      "meaning_mm": "MESSAGE"
+    },
+    {
+      "number": 15,
+      "word": "レシピ",
+      "reading": "れしぴ",
+      "meaning_mm": "RECIPE / ချက်ပြုတ်နည်း"
+    },
+    {
+      "number": 16,
+      "word": "サイン",
+      "reading": "さいん",
+      "meaning_mm": "လက်မှတ်"
+    },
+    {
+      "number": 17,
+      "word": "アナウンス",
+      "reading": "あなうんす",
+      "meaning_mm": "ကြေညာသည်"
+    },
+    {
+      "number": 18,
+      "word": "スピーチ",
+      "reading": "すぴーち",
+      "meaning_mm": "SPEECH / မိန့်ခွန်း"
+    },
+    {
+      "number": 19,
+      "word": "インタビュー",
+      "reading": "いんたびゅー",
+      "meaning_mm": "INTERVIEW"
+    },
+    {
+      "number": 20,
+      "word": "コミュニケーション",
+      "reading": "こみゅにけーしょん",
+      "meaning_mm": "ဆက်သွယ်ပြောဆိုမှု"
+    },
+    {
+      "number": 21,
+      "word": "スタート",
+      "reading": "すたーと",
+      "meaning_mm": "စတင်သည်"
+    },
+    {
+      "number": 22,
+      "word": "セット",
+      "reading": "せっと",
+      "meaning_mm": "အစုံ / set"
+    },
+    {
+      "number": 23,
+      "word": "ストップ",
+      "reading": "すとっぷ",
+      "meaning_mm": "ရပ်တန့်သည်"
+    },
+    {
+      "number": 24,
+      "word": "マーク",
+      "reading": "まーく",
+      "meaning_mm": "အမှတ်အသား"
+    },
+    {
+      "number": 25,
+      "word": "アクセス",
+      "reading": "あくせす",
+      "meaning_mm": "ဝင်ရောက်အသုံးပြုမှု"
+    },
+    {
+      "number": 26,
+      "word": "チャレンジ",
+      "reading": "ちゃれんじ",
+      "meaning_mm": "CHALLENGE / စိန်ခေါ်မှု"
+    },
+    {
+      "number": 27,
+      "word": "オープン",
+      "reading": "おーぷん",
+      "meaning_mm": "OPEN / ဖွင့်သည်"
+    },
+    {
+      "number": 28,
+      "word": "ケース",
+      "reading": "けーす",
+      "meaning_mm": "အမှုကိစ္စ / အခြေအနေ"
+    },
+    {
+      "number": 29,
+      "word": "カバー",
+      "reading": "かばー",
+      "meaning_mm": "အဖုံး"
+    },
+    {
+      "number": 30,
+      "word": "マスク",
+      "reading": "ますく",
+      "meaning_mm": "MASK / နှာခေါင်းစည်း"
+    },
+    {
+      "number": 31,
+      "word": "ラップ",
+      "reading": "らっぷ",
+      "meaning_mm": "ထုပ်ပိုးသည်"
+    },
+    {
+      "number": 32,
+      "word": "サンプル",
+      "reading": "さんぷる",
+      "meaning_mm": "SAMPLE / နမူနာ"
+    },
+    {
+      "number": 33,
+      "word": "パンフレット",
+      "reading": "ぱんふれっと",
+      "meaning_mm": "လက်ကမ်းစာစောင်"
+    },
+    {
+      "number": 34,
+      "word": "サービス",
+      "reading": "さーびす",
+      "meaning_mm": "SERVICE / ဝန်ဆောင်မှု"
+    },
+    {
+      "number": 35,
+      "word": "アルバイト",
+      "reading": "あるばいと",
+      "meaning_mm": "အချိန်ပိုင်းအလုပ်"
+    },
+    {
+      "number": 36,
+      "word": "アイデア",
+      "reading": "あいであ",
+      "meaning_mm": "IDEA / အကြံဉာဏ်"
+    },
+    {
+      "number": 37,
+      "word": "マナー",
+      "reading": "まなー",
+      "meaning_mm": "အပြုအမူစည်းကမ်း"
+    },
+    {
+      "number": 38,
+      "word": "メニュー",
+      "reading": "めにゅー",
+      "meaning_mm": "MENU"
+    },
+    {
+      "number": 39,
+      "word": "デザイン",
+      "reading": "でざいん",
+      "meaning_mm": "ဒီဇိုင်း"
+    },
+    {
+      "number": 40,
+      "word": "イメージ",
+      "reading": "いめーじ",
+      "meaning_mm": "IMAGE / ပုံရိပ်"
+    }
+  ],
+  "onomatopoeia": [
+    {
+      "number": 1,
+      "word": "ばらばら",
+      "reading": "ばらばら",
+      "meaning_mm": "တကွဲတပြား"
+    },
+    {
+      "number": 2,
+      "word": "ぺらぺら",
+      "reading": "ぺらぺら",
+      "meaning_mm": "ကျွမ်းကျင်စွာ ပြောနိုင်သည်"
+    },
+    {
+      "number": 3,
+      "word": "だんだん",
+      "reading": "だんだん",
+      "meaning_mm": "တဖြည်းဖြည်း"
+    },
+    {
+      "number": 4,
+      "word": "とうとう",
+      "reading": "とうとう",
+      "meaning_mm": "နောက်ဆုံးတော့"
+    },
+    {
+      "number": 5,
+      "word": "つぎつぎ、次々",
+      "reading": "つぎつぎ",
+      "meaning_mm": "တစ်ခုပြီးတစ်ခု"
+    },
+    {
+      "number": 6,
+      "word": "どきどき",
+      "reading": "どきどき",
+      "meaning_mm": "ရင်ခုန်သံတဒိတ်ဒိတ်"
+    },
+    {
+      "number": 7,
+      "word": "にこにこ",
+      "reading": "にこにこ",
+      "meaning_mm": "ပြုံးပြုံးရွှင်ရွှင်"
+    },
+    {
+      "number": 8,
+      "word": "ふらふらな",
+      "reading": "ふらふらな",
+      "meaning_mm": "မူးဝေယိုင်နဲ့သော"
+    },
+    {
+      "number": 9,
+      "word": "にやにやな",
+      "reading": "にやにやな",
+      "meaning_mm": "ပြုံးစိစိဖြစ်သော"
+    },
+    {
+      "number": 10,
+      "word": "ぼろぼろな",
+      "reading": "ぼろぼろな",
+      "meaning_mm": "ဟောင်းနွမ်းပျက်စီးသော"
+    },
+    {
+      "number": 11,
+      "word": "ぶつぶつ",
+      "reading": "ぶつぶつ",
+      "meaning_mm": "တတွတ်တွတ် ညည်းညူသည်"
+    },
+    {
+      "number": 12,
+      "word": "ぴかぴか",
+      "reading": "ぴかぴか",
+      "meaning_mm": "တောက်လက်တောက်ပသော"
+    },
+    {
+      "number": 13,
+      "word": "ぶらぶらする",
+      "reading": "ぶらぶらする",
+      "meaning_mm": "ဟိုဟိုဒီဒီ လျှောက်သွားသည်"
+    },
+    {
+      "number": 14,
+      "word": "別々な、べつべつな",
+      "reading": "べつべつな",
+      "meaning_mm": "သီးခြားစီ"
+    },
+    {
+      "number": 15,
+      "word": "ぺこぺこな",
+      "reading": "ぺこぺこな",
+      "meaning_mm": "ဗိုက်ဆာသော"
+    },
+    {
+      "number": 16,
+      "word": "まあまあ",
+      "reading": "まあまあ",
+      "meaning_mm": "မဆိုးပါဘူး၊ အသင့်အတင့်"
+    },
+    {
+      "number": 17,
+      "word": "ますます",
+      "reading": "ますます",
+      "meaning_mm": "ပို၍ပို၍"
+    },
+    {
+      "number": 18,
+      "word": "わざわざ",
+      "reading": "わざわざ",
+      "meaning_mm": "တကူးတက"
+    },
+    {
+      "number": 19,
+      "word": "わくわくする",
+      "reading": "わくわくする",
+      "meaning_mm": "စိတ်လှုပ်ရှားမျှော်လင့်သည်"
+    },
+    {
+      "number": 20,
+      "word": "もともと",
+      "reading": "もともと",
+      "meaning_mm": "နဂိုမူလက"
+    },
+    {
+      "number": 21,
+      "word": "われわれ",
+      "reading": "われわれ",
+      "meaning_mm": "ကျွန်ုပ်တို့"
+    },
+    {
+      "number": 22,
+      "word": "そろそろ",
+      "reading": "そろそろ",
+      "meaning_mm": "မကြာမီ / အချိန်တန်ပြီ"
+    },
+    {
+      "number": 23,
+      "word": "のろのろ",
+      "reading": "のろのろ",
+      "meaning_mm": "နှေးနှေးကွေးကွေး"
+    },
+    {
+      "number": 24,
+      "word": "いちいち",
+      "reading": "いちいち",
+      "meaning_mm": "တစ်ခုချင်းစီ"
+    },
+    {
+      "number": 25,
+      "word": "いらいらする",
+      "reading": "いらいらする",
+      "meaning_mm": "စိတ်တိုစိတ်ရှုပ်သည်"
+    },
+    {
+      "number": 26,
+      "word": "いよいよ",
+      "reading": "いよいよ",
+      "meaning_mm": "နောက်ဆုံးတော့ / အမှန်တကယ်"
+    },
+    {
+      "number": 27,
+      "word": "いきいきと",
+      "reading": "いきいきと",
+      "meaning_mm": "တက်ကြွလန်းဆန်းစွာ"
+    },
+    {
+      "number": 28,
+      "word": "うきうき",
+      "reading": "うきうき",
+      "meaning_mm": "စိတ်ရွှင်လန်းတက်ကြွသည်"
+    },
+    {
+      "number": 29,
+      "word": "いろいろな",
+      "reading": "いろいろな",
+      "meaning_mm": "အမျိုးမျိုးသော"
+    },
+    {
+      "number": 30,
+      "word": "さまざまな",
+      "reading": "さまざまな",
+      "meaning_mm": "အမျိုးမျိုးသော"
+    },
+    {
+      "number": 31,
+      "word": "うろうろ",
+      "reading": "うろうろ",
+      "meaning_mm": "ဟိုဟိုဒီဒီ လျှောက်သွားသည်"
+    },
+    {
+      "number": 32,
+      "word": "うとうとする",
+      "reading": "うとうとする",
+      "meaning_mm": "ငိုက်မျဉ်းသည်"
+    },
+    {
+      "number": 33,
+      "word": "がらがらな",
+      "reading": "がらがらな",
+      "meaning_mm": "လူမရှိဘဲ ခြောက်ကပ်သော"
+    },
+    {
+      "number": 34,
+      "word": "きらきらする",
+      "reading": "きらきらする",
+      "meaning_mm": "တောက်ပလင်းလက်သည်"
+    },
+    {
+      "number": 35,
+      "word": "からからな",
+      "reading": "からからな",
+      "meaning_mm": "ခြောက်သွေ့သော"
+    },
+    {
+      "number": 36,
+      "word": "くたくたな",
+      "reading": "くたくたな",
+      "meaning_mm": "ပင်ပန်းနွမ်းနယ်သော"
+    },
+    {
+      "number": 37,
+      "word": "ぎりぎりな",
+      "reading": "ぎりぎりな",
+      "meaning_mm": "ကပ်သီလေး / နောက်ဆုံးအချိန်"
+    },
+    {
+      "number": 38,
+      "word": "ごろごろする",
+      "reading": "ごろごろする",
+      "meaning_mm": "အိမ်မှာ အေးအေးဆေးဆေး လှဲနေသည်"
+    },
+    {
+      "number": 39,
+      "word": "少々、しょうしょう",
+      "reading": "しょうしょう",
+      "meaning_mm": "အနည်းငယ်"
+    },
+    {
+      "number": 40,
+      "word": "ごちゃごちゃ",
+      "reading": "ごちゃごちゃ",
+      "meaning_mm": "ရှုပ်ပွနေသော"
+    },
+    {
+      "number": 41,
+      "word": "すべすべ",
+      "reading": "すべすべ",
+      "meaning_mm": "ချောမွေ့သော"
+    },
+    {
+      "number": 42,
+      "word": "たまたま",
+      "reading": "たまたま",
+      "meaning_mm": "မတော်တဆ / တိုက်တိုက်ဆိုင်ဆိုင်"
+    },
+    {
+      "number": 43,
+      "word": "たびたび",
+      "reading": "たびたび",
+      "meaning_mm": "မကြာခဏ"
+    },
+    {
+      "number": 44,
+      "word": "むしむし",
+      "reading": "むしむし",
+      "meaning_mm": "ပူအိုက်စိုစွတ်သော"
+    },
+    {
+      "number": 45,
+      "word": "のびのび",
+      "reading": "のびのび",
+      "meaning_mm": "လွတ်လပ်ပေါ့ပါးစွာ"
+    }
+  ],
   "expressions": [
     {
       "number": 98,
@@ -773,5 +1285,5 @@
     }
   ],
   "similar_meanings": [],
-  "_source_note": "Consolidated entries 1–140 from the main vocabulary list. Entries 81–140 are transcribed from PDF pages 7–9. Some Myanmar glosses are concise translations of the visible source meanings."
+  "_source_note": "Includes main vocabulary entries 1–140 plus Katakana entries 1–40 and 擬音語/onomatopoeia entries from PDF pages 12–14. Myanmar glosses are transcribed or lightly normalized from the scanned tables; some explanations are concise where the scan wording is difficult to read."
 }
