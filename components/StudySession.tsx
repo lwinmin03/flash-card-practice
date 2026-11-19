@@ -245,104 +245,203 @@ function Session({
           onStudyAgain={shuffleRestart}
         />
       ) : currentCard ? (
-        <>
-          <div className="mb-2 flex items-center justify-between gap-3 text-[10px] font-semibold uppercase tracking-[0.2em] text-muted">
-            <span>{initialMode === "review" ? "Review" : "Study"}</span>
-            <span className="text-[11px] font-medium normal-case tracking-normal">
-              {stats.known} learned · {stats.review} to review
-            </span>
-          </div>
+        <div className="flex flex-1 flex-col lg:grid lg:grid-cols-[minmax(0,42rem)_20rem] lg:items-start lg:justify-center lg:gap-8">
+          <div className="flex flex-1 flex-col lg:min-h-[min(74vh,42rem)]">
+            <div className="mb-2 flex items-center justify-between gap-3 text-[10px] font-semibold uppercase tracking-[0.2em] text-muted">
+              <span>{initialMode === "review" ? "Review" : "Study"}</span>
+              <span className="text-[11px] font-medium normal-case tracking-normal">
+                {stats.known} learned · {stats.review} to review
+              </span>
+            </div>
 
-          {deck.kind === "grammar" ? null : (
-            <PromptSwitch value={prompt} onChange={changePrompt} />
-          )}
+            {deck.kind === "grammar" ? null : (
+              <PromptSwitch value={prompt} onChange={changePrompt} />
+            )}
 
-          {currentCard.kind === "grammar" ? (
-            <GrammarFlashcard
-              key={currentCard.id}
-              card={currentCard}
-              level={deck.level}
-              flipped={flipped}
-              status={currentStatus}
-              onToggle={() => setFlipped((value) => !value)}
-            />
-          ) : (
-            <Flashcard
-              key={currentCard.id}
-              card={currentCard}
-              level={deck.level}
-              prompt={prompt}
-              flipped={flipped}
-              status={currentStatus}
-              onToggle={() => setFlipped((value) => !value)}
-            />
-          )}
-
-          <div className="mt-4 shrink-0">
-            {flipped ? (
-              <div className="grid grid-cols-2 gap-3">
-                <button
-                  type="button"
-                  onClick={() => grade("review")}
-                  className="flex h-16 flex-col items-center justify-center rounded-2xl border border-accent/25 bg-accent-soft text-accent transition hover:border-accent/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas active:scale-[0.98]"
-                >
-                  <span className="text-sm font-semibold">Again</span>
-                  <span className="mt-0.5 text-[10px] font-medium opacity-70">
-                    Needs practice
-                  </span>
-                </button>
-                <button
-                  type="button"
-                  onClick={() => grade("known")}
-                  className="flex h-16 flex-col items-center justify-center rounded-2xl bg-success text-canvas transition hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-success/60 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas active:scale-[0.98]"
-                >
-                  <span className="text-sm font-semibold">Got it</span>
-                  <span className="mt-0.5 text-[10px] font-medium opacity-75">
-                    Knew this one
-                  </span>
-                </button>
-              </div>
+            {currentCard.kind === "grammar" ? (
+              <GrammarFlashcard
+                key={currentCard.id}
+                card={currentCard}
+                level={deck.level}
+                flipped={flipped}
+                status={currentStatus}
+                onToggle={() => setFlipped((value) => !value)}
+              />
             ) : (
+              <Flashcard
+                key={currentCard.id}
+                card={currentCard}
+                level={deck.level}
+                prompt={prompt}
+                flipped={flipped}
+                status={currentStatus}
+                onToggle={() => setFlipped((value) => !value)}
+              />
+            )}
+
+            <div className="mt-4 shrink-0">
+              {flipped ? (
+                <div className="grid grid-cols-2 gap-3">
+                  <button
+                    type="button"
+                    onClick={() => grade("review")}
+                    className="flex h-16 flex-col items-center justify-center rounded-2xl border border-accent/25 bg-accent-soft text-accent transition hover:border-accent/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas active:scale-[0.98]"
+                  >
+                    <span className="text-sm font-semibold">Again</span>
+                    <span className="mt-0.5 text-[10px] font-medium opacity-70">
+                      Needs practice
+                    </span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => grade("known")}
+                    className="flex h-16 flex-col items-center justify-center rounded-2xl bg-success text-canvas transition hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-success/60 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas active:scale-[0.98]"
+                  >
+                    <span className="text-sm font-semibold">Got it</span>
+                    <span className="mt-0.5 text-[10px] font-medium opacity-75">
+                      Knew this one
+                    </span>
+                  </button>
+                </div>
+              ) : (
+                <button
+                  type="button"
+                  onClick={() => setFlipped(true)}
+                  className="flex h-16 w-full items-center justify-center gap-2 rounded-2xl bg-ink text-sm font-semibold text-canvas transition hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas active:scale-[0.99]"
+                >
+                  Show answer
+                  <span className="hidden rounded-md border border-canvas/20 px-1.5 py-0.5 text-[10px] font-medium text-canvas/60 sm:inline">
+                    Space
+                  </span>
+                </button>
+              )}
+            </div>
+
+            <div className="mt-2 flex items-center justify-between">
               <button
                 type="button"
-                onClick={() => setFlipped(true)}
-                className="flex h-16 w-full items-center justify-center gap-2 rounded-2xl bg-ink text-sm font-semibold text-canvas transition hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas active:scale-[0.99]"
+                onClick={goPrev}
+                disabled={cursor === 0}
+                className="inline-flex h-10 items-center gap-1 rounded-full px-2 text-xs font-medium text-muted transition hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 disabled:pointer-events-none disabled:opacity-30"
               >
-                Show answer
-                <span className="hidden rounded-md border border-canvas/20 px-1.5 py-0.5 text-[10px] font-medium text-canvas/60 sm:inline">
-                  Space
-                </span>
+                <ArrowLeft />
+                Prev
               </button>
-            )}
+
+              <span className="text-[11px] text-muted">
+                {flipped ? "Grade yourself" : "Tap the card"}
+              </span>
+
+              <button
+                type="button"
+                onClick={goNext}
+                className="inline-flex h-10 items-center gap-1 rounded-full px-2 text-xs font-medium text-muted transition hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60"
+              >
+                Skip
+                <ArrowRight />
+              </button>
+            </div>
           </div>
 
-          <div className="mt-2 flex items-center justify-between">
-            <button
-              type="button"
-              onClick={goPrev}
-              disabled={cursor === 0}
-              className="inline-flex h-10 items-center gap-1 rounded-full px-2 text-xs font-medium text-muted transition hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 disabled:pointer-events-none disabled:opacity-30"
-            >
-              <ArrowLeft />
-              Prev
-            </button>
-
-            <span className="text-[11px] text-muted">
-              {flipped ? "Grade yourself" : "Tap the card"}
-            </span>
-
-            <button
-              type="button"
-              onClick={goNext}
-              className="inline-flex h-10 items-center gap-1 rounded-full px-2 text-xs font-medium text-muted transition hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60"
-            >
-              Skip
-              <ArrowRight />
-            </button>
-          </div>
-        </>
+          <SessionSidebar deck={deck} stats={stats} mode={initialMode} />
+        </div>
       ) : null}
     </StudyFrame>
+  );
+}
+
+function SessionSidebar({
+  deck,
+  stats,
+  mode,
+}: {
+  deck: Deck;
+  stats: DeckStats;
+  mode: StudyMode;
+}) {
+  return (
+    <aside className="hidden lg:sticky lg:top-28 lg:flex lg:w-full lg:flex-col lg:gap-4">
+      <section className="rounded-[1.5rem] border border-line bg-surface p-5 shadow-sm shadow-black/[0.03]">
+        <div className="flex items-center justify-between gap-2">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted">
+            Deck progress
+          </p>
+          <span className="rounded-full bg-canvas px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-muted">
+            {mode === "review" ? "Review" : "Study"}
+          </span>
+        </div>
+
+        <p className="mt-3 text-2xl font-semibold tabular-nums">
+          {stats.known}
+          <span className="ml-1.5 text-sm font-normal text-muted">
+            / {stats.total} learned
+          </span>
+        </p>
+
+        <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-line/70">
+          <div
+            className="h-full rounded-full bg-success transition-[width] duration-500 ease-out"
+            style={{ width: `${stats.percent}%` }}
+          />
+        </div>
+
+        <dl className="mt-4 grid grid-cols-2 gap-2">
+          <div className="rounded-2xl bg-accent-soft px-3 py-2.5">
+            <dt className="text-[10px] font-medium uppercase tracking-[0.12em] text-accent/80">
+              To review
+            </dt>
+            <dd className="mt-0.5 text-lg font-semibold tabular-nums text-accent">
+              {stats.review}
+            </dd>
+          </div>
+          <div className="rounded-2xl bg-canvas/70 px-3 py-2.5">
+            <dt className="text-[10px] font-medium uppercase tracking-[0.12em] text-muted">
+              New
+            </dt>
+            <dd className="mt-0.5 text-lg font-semibold tabular-nums">
+              {stats.unseen}
+            </dd>
+          </div>
+        </dl>
+
+        <p className="mt-4 text-[11px] leading-relaxed text-muted">
+          {deck.description}
+        </p>
+      </section>
+
+      <section className="rounded-[1.5rem] border border-line bg-surface p-5 shadow-sm shadow-black/[0.03]">
+        <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted">
+          Keyboard
+        </p>
+        <ul className="mt-3 space-y-2.5 text-xs">
+          <ShortcutRow keys={["Space"]} label="Flip the card" />
+          <ShortcutRow keys={["←", "→"]} label="Previous / skip" />
+          <ShortcutRow keys={["A", "1"]} label="Again" />
+          <ShortcutRow keys={["G", "2"]} label="Got it" />
+        </ul>
+        <p className="mt-4 border-t border-line pt-3 text-[11px] leading-relaxed text-muted">
+          Grade a card after its answer is showing.
+        </p>
+      </section>
+    </aside>
+  );
+}
+
+function ShortcutRow({ keys, label }: { keys: string[]; label: string }) {
+  return (
+    <li className="flex items-center justify-between gap-3">
+      <span className="text-muted">{label}</span>
+      <span className="flex items-center gap-1">
+        {keys.map((key) => (
+          <kbd
+            key={key}
+            className="grid h-6 min-w-6 place-items-center rounded-md border border-line bg-canvas px-1.5 font-sans text-[10px] font-semibold text-muted"
+          >
+            {key}
+          </kbd>
+        ))}
+      </span>
+    </li>
   );
 }
 
@@ -365,14 +464,21 @@ function StudyFrame({
   return (
     <div className="flex min-h-[100svh] flex-col">
       <header className="sticky top-0 z-20 border-b border-line/70 bg-canvas/85 backdrop-blur-md">
-        <div className="mx-auto flex w-full max-w-md items-center gap-2 px-4 pb-3 pt-[max(0.75rem,env(safe-area-inset-top))]">
+        <div className="mx-auto flex w-full max-w-md items-center gap-2 px-4 pb-3 pt-[max(0.75rem,env(safe-area-inset-top))] lg:max-w-6xl lg:gap-3 lg:px-8 lg:pb-4 lg:pt-6">
           <Link href="/" aria-label="Back to decks" className={iconButton}>
             <ArrowLeft />
           </Link>
 
           <div className="min-w-0 flex-1">
             <div className="flex items-baseline justify-between gap-2">
-              <p className="truncate text-sm font-semibold">{deck.title}</p>
+              <div className="flex min-w-0 items-center gap-2">
+                <p className="truncate text-sm font-semibold lg:text-base">
+                  {deck.title}
+                </p>
+                <span className="hidden shrink-0 rounded-full border border-line bg-surface px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-muted lg:inline-block">
+                  {deck.level}
+                </span>
+              </div>
               <p className="shrink-0 text-xs tabular-nums text-muted">
                 {total === null || total === 0
                   ? "—"
@@ -400,7 +506,7 @@ function StudyFrame({
         </div>
       </header>
 
-      <main className="mx-auto flex w-full max-w-md flex-1 flex-col px-4 pb-[max(1.25rem,env(safe-area-inset-bottom))] pt-4">
+      <main className="mx-auto flex w-full max-w-md flex-1 flex-col px-4 pb-[max(1.25rem,env(safe-area-inset-bottom))] pt-4 lg:max-w-6xl lg:px-8 lg:pb-10 lg:pt-6">
         {children}
       </main>
     </div>
@@ -524,7 +630,7 @@ function SessionComplete({
   const accuracy = graded === 0 ? 0 : Math.round((known / graded) * 100);
 
   return (
-    <div className="animate-rise-in flex flex-1 flex-col justify-center py-6">
+    <div className="animate-rise-in flex flex-1 flex-col justify-center py-6 lg:mx-auto lg:w-full lg:max-w-xl">
       <div className="text-center">
         <div className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-success-soft text-success">
           <CheckIcon />

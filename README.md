@@ -14,6 +14,7 @@ more levels can be added without touching the UI.
 - Progress ring, per-deck stats, and resume from where you left off
 - Shuffle/restart, previous/skip navigation, and keyboard shortcuts
 - Mobile-first layout with safe-area support and dark mode
+- Dedicated desktop layout for the deck list and study screen
 - Data-driven decks loaded from JSON
 
 ## Getting started
