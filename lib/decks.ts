@@ -1,4 +1,5 @@
 import kanjiN3 from "@/data/kanji.json";
+import katakana from "@/data/katakana.json";
 import grammarN3 from "@/data/n3_grammar_patterns_01_30.json";
 import n3Goi from "@/data/n3_goi_myanmar_batch1.json";
 import type {
@@ -8,6 +9,8 @@ import type {
   DeckSummary,
   GrammarCard,
   GrammarExample,
+  SimilarCard,
+  SimilarMeaning,
   WordCard,
 } from "@/lib/types";
 
@@ -18,6 +21,7 @@ type RawCard = {
   reading?: unknown;
   meaning?: unknown;
   meaning_mm?: unknown;
+  meaning_en?: unknown;
 };
 
 type RawGrammarEntry = {
@@ -33,6 +37,11 @@ type RawGrammarEntry = {
   notes?: unknown;
 };
 
+type RawSimilarEntry = {
+  left?: unknown;
+  right?: unknown;
+};
+
 type DeckDefinition = {
   id: string;
   level: string;
@@ -42,6 +51,10 @@ type DeckDefinition = {
   kind?: DeckKind;
   /** Front of a vocabulary card. Defaults to "kanji". */
   defaultPrompt?: CardPrompt;
+  /** Kana-only decks skip the kanji/reading prompt switch. */
+  kanaOnly?: boolean;
+  /** Reads one named group out of a grouped source file instead of all groups. */
+  group?: string;
   raw: unknown;
 };
 
@@ -62,11 +75,19 @@ type DeckDefinition = {
  *
  * Meanings may use `meaning_mm` (or `myanmar` on examples) for Myanmar text.
  * Kana-only vocabulary (katakana, onomatopoeia) may use `word`/`reading`
- * instead of `kanji`/`hiragana`.
+ * instead of `kanji`/`hiragana`, and can add `meaning_en` for an English gloss.
  *
  * The home screen and study routes pick it up automatically.
  */
 const DEFINITIONS: DeckDefinition[] = [
+  {
+    id: "katakana",
+    level: "Kana",
+    title: "Katakana カタカナ",
+    description: "Katakana words · English & Myanmar meanings",
+    kanaOnly: true,
+    raw: katakana,
+  },
   {
     id: "n3",
     level: "N3",
@@ -80,6 +101,15 @@ const DEFINITIONS: DeckDefinition[] = [
     title: "JLPT N3 語彙",
     description: "Kanji ↔ Hiragana · Myanmar meanings",
     defaultPrompt: "hiragana",
+    raw: n3Goi,
+  },
+  {
+    id: "n3-similar",
+    level: "N3",
+    title: "JLPT N3 同じ意味",
+    description: "Same-meaning word pairs · compare & contrast",
+    kind: "similar",
+    group: "similar_meanings",
     raw: n3Goi,
   },
   {
@@ -121,27 +151,33 @@ function cardEntries(raw: unknown): RawCard[] {
   );
 }
 
-function normalizeCards(raw: unknown): WordCard[] {
+function normalizeCards(raw: unknown, kanaOnly = false): WordCard[] {
   const occurrences = new Map<string, number>();
 
   return cardEntries(raw).flatMap((entry) => {
     // Katakana and onomatopoeia groups use `word`/`reading` instead of
     // `kanji`/`hiragana`; both shapes become the same flashcard.
     const kanji = text(entry?.kanji) || text(entry?.word);
-    const hiragana = text(entry?.hiragana) || text(entry?.reading);
+    const reading = text(entry?.hiragana) || text(entry?.reading);
     const meaning = text(entry?.meaning) || text(entry?.meaning_mm);
+    const meaningEn = text(entry?.meaning_en);
 
-    if (!kanji || !hiragana || !meaning) return [];
+    if (!kanji || !meaning) return [];
+
+    // Kana-only decks have no separate reading. Elsewhere a word written only
+    // in kana (e.g. はっきり) uses itself as its reading so the card still works.
+    const hiragana = reading || (kanaOnly ? "" : kanji);
 
     // Kanji + reading keeps ids stable if the file is reordered, and avoids
     // collisions for future homographs with different readings.
     return [
       {
         kind: "word",
-        id: uniqueId(occurrences, `${kanji}·${hiragana}`),
+        id: uniqueId(occurrences, hiragana ? `${kanji}·${hiragana}` : kanji),
         kanji,
         hiragana,
         meaning,
+        meaningEn: meaningEn || undefined,
       },
     ];
   });
@@ -202,14 +238,78 @@ function normalizeGrammar(raw: unknown): GrammarCard[] {
   });
 }
 
+function similarEntries(raw: unknown): RawSimilarEntry[] {
+  if (Array.isArray(raw)) return raw as RawSimilarEntry[];
+  if (!raw || typeof raw !== "object") return [];
+
+  const entries = (raw as { similar_meanings?: unknown }).similar_meanings;
+  return Array.isArray(entries) ? (entries as RawSimilarEntry[]) : [];
+}
+
+function normalizeSimilarSide(value: unknown): SimilarMeaning | null {
+  if (!value || typeof value !== "object") return null;
+
+  const side = value as Record<string, unknown>;
+  const word = text(side.word) || text(side.kanji);
+  const meaning = text(side.meaning_mm) || text(side.meaning);
+
+  if (!word || !meaning) return null;
+  return { word, meaning };
+}
+
+function normalizeSimilar(raw: unknown): SimilarCard[] {
+  const occurrences = new Map<string, number>();
+
+  return similarEntries(raw).flatMap((entry) => {
+    const left = normalizeSimilarSide(entry?.left);
+    const right = normalizeSimilarSide(entry?.right);
+
+    if (!left || !right) return [];
+
+    return [
+      {
+        kind: "similar",
+        id: uniqueId(occurrences, `${left.word}·${right.word}`),
+        left,
+        right,
+      },
+    ];
+  });
+}
+
+/** Picks a named group out of a grouped source file, leaving flat sources as-is. */
+function deckSource(raw: unknown, group: string | undefined): unknown {
+  if (!group || !raw || typeof raw !== "object" || Array.isArray(raw)) {
+    return raw;
+  }
+
+  return (raw as Record<string, unknown>)[group];
+}
+
 const DECKS: Deck[] = DEFINITIONS.map(
-  ({ raw, kind = "vocabulary", defaultPrompt = "kanji", ...deck }) => ({
-    ...deck,
-    kind,
-    defaultPrompt,
-    cards:
-      kind === "grammar" ? normalizeGrammar(raw) : normalizeCards(raw),
-  }),
+  ({
+    raw,
+    group,
+    kind = "vocabulary",
+    defaultPrompt = "kanji",
+    kanaOnly = false,
+    ...deck
+  }) => {
+    const source = deckSource(raw, group);
+
+    return {
+      ...deck,
+      kind,
+      defaultPrompt,
+      kanaOnly,
+      cards:
+        kind === "grammar"
+          ? normalizeGrammar(source)
+          : kind === "similar"
+            ? normalizeSimilar(source)
+            : normalizeCards(source, kanaOnly),
+    };
+  },
 );
 
 const DECKS_BY_ID = new Map(DECKS.map((deck) => [deck.id, deck]));

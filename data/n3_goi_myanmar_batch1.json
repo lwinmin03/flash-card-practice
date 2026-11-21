@@ -755,7 +755,379 @@
       "meaning_mm": "အရေးကြီးသော"
     }
   ],
-  "adverbs": [],
+  "adverbs": [
+    {
+      "number": 1,
+      "word": "はっきり",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "ထင်ထင်ရှားရှား"
+    },
+    {
+      "number": 2,
+      "word": "しっかり",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "သေသေချာချာ"
+    },
+    {
+      "number": 3,
+      "word": "ぴったり",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "ကွက်တိ"
+    },
+    {
+      "number": 4,
+      "word": "そっくり",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "ချွတ်စွပ်တူသော"
+    },
+    {
+      "number": 5,
+      "word": "ぜひ",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "ဆက်ဆက်သေချာပေါက်"
+    },
+    {
+      "number": 6,
+      "word": "一応",
+      "reading": "",
+      "kanji": "いちおう",
+      "meaning_mm": "လောလောဆယ်"
+    },
+    {
+      "number": 7,
+      "word": "ついでに",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "တစ်လက်စတည်း"
+    },
+    {
+      "number": 8,
+      "word": "ぐうぜん",
+      "reading": "",
+      "kanji": "偶然",
+      "meaning_mm": "ရုတ်တရက်"
+    },
+    {
+      "number": 9,
+      "word": "かならず",
+      "reading": "",
+      "kanji": "必ず",
+      "meaning_mm": "မဖြစ်မနေ"
+    },
+    {
+      "number": 10,
+      "word": "すべて",
+      "reading": "",
+      "kanji": "全て",
+      "meaning_mm": "အားလုံး"
+    },
+    {
+      "number": 11,
+      "word": "おもに",
+      "reading": "",
+      "kanji": "主に",
+      "meaning_mm": "အဓိက"
+    },
+    {
+      "number": 12,
+      "word": "うっかり",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "အမှတ်မထင်/သတိမမူမိ"
+    },
+    {
+      "number": 13,
+      "word": "しばらく",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "ခဏလောက်"
+    },
+    {
+      "number": 14,
+      "word": "ずっと",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "တောက်လျှောက်"
+    },
+    {
+      "number": 15,
+      "word": "せっかく",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "တကူးတက"
+    },
+    {
+      "number": 16,
+      "word": "ぜったいに",
+      "reading": "",
+      "kanji": "絶対に",
+      "meaning_mm": "သေချာပေါက်၊ လုံးဝ"
+    },
+    {
+      "number": 17,
+      "word": "たまたま",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "မထင်မှတ်ဘဲ"
+    },
+    {
+      "number": 18,
+      "word": "ちょくせつ",
+      "reading": "",
+      "kanji": "直接",
+      "meaning_mm": "တိုက်ရိုက်"
+    },
+    {
+      "number": 19,
+      "word": "ついに",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "နောက်ဆုံးမှာတော့"
+    },
+    {
+      "number": 20,
+      "word": "つねに",
+      "reading": "",
+      "kanji": "常に",
+      "meaning_mm": "အမြဲတမ်း"
+    },
+    {
+      "number": 21,
+      "word": "どこか",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "တစ်နေရာရာ"
+    },
+    {
+      "number": 22,
+      "word": "いつか",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "တစ်ချိန်ချိန်မှာ"
+    },
+    {
+      "number": 23,
+      "word": "いっしゅん",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "တစ်ခဏလေးအတွင်းမှာ"
+    },
+    {
+      "number": 24,
+      "word": "きがるに",
+      "reading": "",
+      "kanji": "気軽に",
+      "meaning_mm": "သက်တောင့်သက်သာ"
+    },
+    {
+      "number": 25,
+      "word": "かなり",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "တော်တော်လေး"
+    },
+    {
+      "number": 26,
+      "word": "きちんと",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "သေသေသပ်သပ်၊ စနစ်တကျ"
+    },
+    {
+      "number": 27,
+      "word": "おそらく",
+      "reading": "",
+      "kanji": "恐らく",
+      "meaning_mm": "ခန့်မှန်းခြေရတော့"
+    },
+    {
+      "number": 28,
+      "word": "けっきょく",
+      "reading": "",
+      "kanji": "結局",
+      "meaning_mm": "နောက်ဆုံးမှာတော့"
+    },
+    {
+      "number": 29,
+      "word": "さっそく",
+      "reading": "",
+      "kanji": "早速",
+      "meaning_mm": "အလျင်အမြန်"
+    },
+    {
+      "number": 30,
+      "word": "ざっと",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "အကြမ်းဖျင်း"
+    },
+    {
+      "number": 31,
+      "word": "さらに",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "ထပ်ပြီး"
+    },
+    {
+      "number": 32,
+      "word": "じっさいに",
+      "reading": "",
+      "kanji": "実際に",
+      "meaning_mm": "လက်တွေ့"
+    },
+    {
+      "number": 33,
+      "word": "じょじょに",
+      "reading": "",
+      "kanji": "徐々に",
+      "meaning_mm": "တဖြည်းဖြည်း"
+    },
+    {
+      "number": 34,
+      "word": "しばしば",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "မကြာခဏ"
+    },
+    {
+      "number": 35,
+      "word": "すくなくとも",
+      "reading": "",
+      "kanji": "少なくとも",
+      "meaning_mm": "အနည်းဆုံးတော့"
+    },
+    {
+      "number": 36,
+      "word": "ずいぶん",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "တော်တော်လေး"
+    },
+    {
+      "number": 37,
+      "word": "とにかく",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "ဘာပဲဖြစ်ဖြစ်"
+    },
+    {
+      "number": 38,
+      "word": "なかなか",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "တော်တော်/အတော်ပင်"
+    },
+    {
+      "number": 39,
+      "word": "ひじょうに",
+      "reading": "",
+      "kanji": "非常に",
+      "meaning_mm": "အလွန်အမင်း"
+    },
+    {
+      "number": 40,
+      "word": "まもなく",
+      "reading": "",
+      "kanji": "間もなく",
+      "meaning_mm": "မကြာခင်"
+    },
+    {
+      "number": 41,
+      "word": "まさに",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "မှန်ကန်စွာ/တကယ်ပဲ"
+    },
+    {
+      "number": 42,
+      "word": "べつに",
+      "reading": "",
+      "kanji": "別に",
+      "meaning_mm": "သီးခြားစီ"
+    },
+    {
+      "number": 43,
+      "word": "まるで",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "တကယ့်ကို"
+    },
+    {
+      "number": 44,
+      "word": "ほぼ",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "လုံးဝနီးပါး"
+    },
+    {
+      "number": 45,
+      "word": "つまり",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "တစ်နည်းအားဖြင့်"
+    },
+    {
+      "number": 46,
+      "word": "もしかしたら",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "အကယ်၍"
+    },
+    {
+      "number": 47,
+      "word": "また",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "တဖန်/ထပ်ပြီး"
+    },
+    {
+      "number": 48,
+      "word": "わざわざ",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "တကူးတက"
+    },
+    {
+      "number": 49,
+      "word": "あるいは",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "သို့မဟုတ်"
+    },
+    {
+      "number": 50,
+      "word": "そして",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "ထို့နောက်"
+    },
+    {
+      "number": 51,
+      "word": "そのうえ",
+      "reading": "",
+      "kanji": "その上",
+      "meaning_mm": "အဲ့အပြင်"
+    },
+    {
+      "number": 52,
+      "word": "ただし",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "ဒါပေမယ့်/သို့သော်"
+    },
+    {
+      "number": 53,
+      "word": "つまり",
+      "reading": "",
+      "kanji": "",
+      "meaning_mm": "တစ်နည်းအားဖြင့်"
+    }
+  ],
   "katakana": [
     {
       "number": 1,
@@ -1284,6 +1656,917 @@
       "meaning_mm": "ပိုက်ဆံရှာသည်"
     }
   ],
-  "similar_meanings": [],
-  "_source_note": "Includes main vocabulary entries 1–140 plus Katakana entries 1–40 and 擬音語/onomatopoeia entries from PDF pages 12–14. Myanmar glosses are transcribed or lightly normalized from the scanned tables; some explanations are concise where the scan wording is difficult to read."
+  "similar_meanings": [
+    {
+      "number": 1,
+      "left": {
+        "word": "絶対に",
+        "meaning_mm": "သေချာပေါက်"
+      },
+      "right": {
+        "word": "必ず",
+        "meaning_mm": "မဖြစ်မနေ"
+      }
+    },
+    {
+      "number": 2,
+      "left": {
+        "word": "逆",
+        "meaning_mm": "ပြောင်းပြန်"
+      },
+      "right": {
+        "word": "反対",
+        "meaning_mm": "ဆန့်ကျင်ဘက်"
+      }
+    },
+    {
+      "number": 3,
+      "left": {
+        "word": "おしまい",
+        "meaning_mm": "ပြီးဆုံးသွားသည်"
+      },
+      "right": {
+        "word": "終わり",
+        "meaning_mm": "ပြီးဆုံးသည်"
+      }
+    },
+    {
+      "number": 4,
+      "left": {
+        "word": "まぶしい",
+        "meaning_mm": "မျက်စိကျိန်းသော"
+      },
+      "right": {
+        "word": "明るすぎて",
+        "meaning_mm": "လင်းလွန်းသော"
+      }
+    },
+    {
+      "number": 5,
+      "left": {
+        "word": "感謝",
+        "meaning_mm": "ကျေးဇူးတင်သည်"
+      },
+      "right": {
+        "word": "お礼",
+        "meaning_mm": "ကျေးဇူး"
+      }
+    },
+    {
+      "number": 6,
+      "left": {
+        "word": "キッチン",
+        "meaning_mm": "မီးဖိုချောင်"
+      },
+      "right": {
+        "word": "台所",
+        "meaning_mm": "မီးဖိုချောင်"
+      }
+    },
+    {
+      "number": 7,
+      "left": {
+        "word": "不安な",
+        "meaning_mm": "စိတ်မအေးသော"
+      },
+      "right": {
+        "word": "心配",
+        "meaning_mm": "စိတ်ပူသော"
+      }
+    },
+    {
+      "number": 8,
+      "left": {
+        "word": "ぺこぺこ",
+        "meaning_mm": "ဗိုက်ဆာသော"
+      },
+      "right": {
+        "word": "おなかがすく",
+        "meaning_mm": "ဗိုက်ဆာသည်"
+      }
+    },
+    {
+      "number": 9,
+      "left": {
+        "word": "だまる",
+        "meaning_mm": "နှုတ်ဆိတ်သည်"
+      },
+      "right": {
+        "word": "何も話さないで",
+        "meaning_mm": "ဘာကိုမှ မပြော"
+      }
+    },
+    {
+      "number": 10,
+      "left": {
+        "word": "普段",
+        "meaning_mm": "သာမန်/ပုံမှန်"
+      },
+      "right": {
+        "word": "いつも",
+        "meaning_mm": "အမြဲတမ်း"
+      }
+    },
+    {
+      "number": 11,
+      "left": {
+        "word": "短期",
+        "meaning_mm": "ကာလတို"
+      },
+      "right": {
+        "word": "すぐ怒る",
+        "meaning_mm": "ချက်ချင်းဒေါသထွက်သည်"
+      }
+    },
+    {
+      "number": 12,
+      "left": {
+        "word": "おい",
+        "meaning_mm": "ဦး"
+      },
+      "right": {
+        "word": "姉の息子",
+        "meaning_mm": "အမရဲ့သား"
+      }
+    },
+    {
+      "number": 13,
+      "left": {
+        "word": "くわしい",
+        "meaning_mm": "အသေးစိတ်သော"
+      },
+      "right": {
+        "word": "細い",
+        "meaning_mm": "သေးငယ်သော"
+      }
+    },
+    {
+      "number": 14,
+      "left": {
+        "word": "さまざまな",
+        "meaning_mm": "အမျိုးမျိုးသော"
+      },
+      "right": {
+        "word": "いろいろな",
+        "meaning_mm": "အမျိုးမျိုးသော"
+      }
+    },
+    {
+      "number": 15,
+      "left": {
+        "word": "報告",
+        "meaning_mm": "အစီရင်ခံသည်"
+      },
+      "right": {
+        "word": "知らせ",
+        "meaning_mm": "အသိပေးခြင်း"
+      }
+    },
+    {
+      "number": 16,
+      "left": {
+        "word": "さっき",
+        "meaning_mm": "ခုနက"
+      },
+      "right": {
+        "word": "少し前に",
+        "meaning_mm": "ခုနက"
+      }
+    },
+    {
+      "number": 17,
+      "left": {
+        "word": "おかしな",
+        "meaning_mm": "ထူးဆန်းသော"
+      },
+      "right": {
+        "word": "変な",
+        "meaning_mm": "ထူးဆန်းသော"
+      }
+    },
+    {
+      "number": 18,
+      "left": {
+        "word": "たちます",
+        "meaning_mm": "ကြာသည်"
+      },
+      "right": {
+        "word": "過ぎます",
+        "meaning_mm": "ကျော်လွန်သည်"
+      }
+    },
+    {
+      "number": 19,
+      "left": {
+        "word": "あわてる",
+        "meaning_mm": "ပြာယာခတ်သည်"
+      },
+      "right": {
+        "word": "急ぐ",
+        "meaning_mm": "လောသည်၊ အလျင်လိုသည်"
+      }
+    },
+    {
+      "number": 20,
+      "left": {
+        "word": "カーブ",
+        "meaning_mm": "ကွေးသည်"
+      },
+      "right": {
+        "word": "曲がる",
+        "meaning_mm": "ကွေးသည်"
+      }
+    },
+    {
+      "number": 21,
+      "left": {
+        "word": "通勤",
+        "meaning_mm": "အလုပ်တက်သည်"
+      },
+      "right": {
+        "word": "仕事に行く",
+        "meaning_mm": "အလုပ်သွားသည်"
+      }
+    },
+    {
+      "number": 22,
+      "left": {
+        "word": "恐ろしい",
+        "meaning_mm": "ကြောက်စရာကောင်းသော"
+      },
+      "right": {
+        "word": "こわい",
+        "meaning_mm": "ကြောက်စရာကောင်းသော"
+      }
+    },
+    {
+      "number": 23,
+      "left": {
+        "word": "わけ",
+        "meaning_mm": "reason / အကြောင်းရင်း"
+      },
+      "right": {
+        "word": "理由",
+        "meaning_mm": "အကြောင်းအရင်း"
+      }
+    },
+    {
+      "number": 24,
+      "left": {
+        "word": "決まり",
+        "meaning_mm": "ဆုံးဖြတ်ချက်"
+      },
+      "right": {
+        "word": "規則",
+        "meaning_mm": "စည်းကမ်း"
+      }
+    },
+    {
+      "number": 25,
+      "left": {
+        "word": "不安",
+        "meaning_mm": "စိတ်မအေးသော"
+      },
+      "right": {
+        "word": "危険",
+        "meaning_mm": "အန္တရာယ်"
+      }
+    },
+    {
+      "number": 26,
+      "left": {
+        "word": "学ぶ",
+        "meaning_mm": "သင်ယူသည်"
+      },
+      "right": {
+        "word": "勉強",
+        "meaning_mm": "လေ့လာသည်"
+      }
+    },
+    {
+      "number": 27,
+      "left": {
+        "word": "全く",
+        "meaning_mm": "လုံးဝ"
+      },
+      "right": {
+        "word": "ぜんぜん",
+        "meaning_mm": "လုံးဝ"
+      }
+    },
+    {
+      "number": 28,
+      "left": {
+        "word": "すべて",
+        "meaning_mm": "အားလုံး"
+      },
+      "right": {
+        "word": "全部",
+        "meaning_mm": "အားလုံး"
+      }
+    },
+    {
+      "number": 29,
+      "left": {
+        "word": "手段",
+        "meaning_mm": "နည်းလမ်း"
+      },
+      "right": {
+        "word": "やり方",
+        "meaning_mm": "လုပ်ပုံလုပ်နည်း"
+      }
+    },
+    {
+      "number": 30,
+      "left": {
+        "word": "くたびれる",
+        "meaning_mm": "မောပန်းသည်"
+      },
+      "right": {
+        "word": "疲れる",
+        "meaning_mm": "ပင်ပန်းသည်"
+      }
+    },
+    {
+      "number": 31,
+      "left": {
+        "word": "しだいに",
+        "meaning_mm": "တဖြည်းဖြည်း"
+      },
+      "right": {
+        "word": "どんどん",
+        "meaning_mm": "တဖြည်းဖြည်း"
+      }
+    },
+    {
+      "number": 32,
+      "left": {
+        "word": "共通点",
+        "meaning_mm": "တူညီသောအချက်"
+      },
+      "right": {
+        "word": "同じところ",
+        "meaning_mm": "တူညီသောနေရာ"
+      }
+    },
+    {
+      "number": 33,
+      "left": {
+        "word": "整理",
+        "meaning_mm": "စီစဉ်ခြင်း"
+      },
+      "right": {
+        "word": "片付ける",
+        "meaning_mm": "ရှင်းလင်းသိမ်းဆည်းသည်"
+      }
+    },
+    {
+      "number": 34,
+      "left": {
+        "word": "ないしょ",
+        "meaning_mm": "လျှို့ဝှက်ချက်"
+      },
+      "right": {
+        "word": "ひみつ",
+        "meaning_mm": "လျှို့ဝှက်ချက်"
+      }
+    },
+    {
+      "number": 35,
+      "left": {
+        "word": "気に入る",
+        "meaning_mm": "ကြိုက်နှစ်သက်သည်"
+      },
+      "right": {
+        "word": "好きな",
+        "meaning_mm": "ကြိုက်နှစ်သက်သည်"
+      }
+    },
+    {
+      "number": 36,
+      "left": {
+        "word": "スケジュール",
+        "meaning_mm": "schedule"
+      },
+      "right": {
+        "word": "予定",
+        "meaning_mm": "အစီအစဉ်"
+      }
+    },
+    {
+      "number": 37,
+      "left": {
+        "word": "指定",
+        "meaning_mm": "သတ်မှတ်ထားသော"
+      },
+      "right": {
+        "word": "決められる",
+        "meaning_mm": "သတ်မှတ်ထားသော"
+      }
+    },
+    {
+      "number": 38,
+      "left": {
+        "word": "サイズ",
+        "meaning_mm": "size"
+      },
+      "right": {
+        "word": "大きさ",
+        "meaning_mm": "အရွယ်အစား"
+      }
+    },
+    {
+      "number": 39,
+      "left": {
+        "word": "注文",
+        "meaning_mm": "order မှာသည်"
+      },
+      "right": {
+        "word": "頼み",
+        "meaning_mm": "တောင်းဆိုချက်"
+      }
+    },
+    {
+      "number": 40,
+      "left": {
+        "word": "確かめる",
+        "meaning_mm": "အတည်ပြုသည်"
+      },
+      "right": {
+        "word": "チェック",
+        "meaning_mm": "check"
+      }
+    },
+    {
+      "number": 41,
+      "left": {
+        "word": "このごろ",
+        "meaning_mm": "အခုလောလောဆယ်"
+      },
+      "right": {
+        "word": "最近",
+        "meaning_mm": "အခုတလော"
+      }
+    },
+    {
+      "number": 42,
+      "left": {
+        "word": "しゃべる",
+        "meaning_mm": "စကားပြောသည်"
+      },
+      "right": {
+        "word": "話す",
+        "meaning_mm": "စကားပြောသည်"
+      }
+    },
+    {
+      "number": 43,
+      "left": {
+        "word": "トレーニング",
+        "meaning_mm": "training"
+      },
+      "right": {
+        "word": "練習",
+        "meaning_mm": "လေ့ကျင့်သည်"
+      }
+    },
+    {
+      "number": 44,
+      "left": {
+        "word": "ようやく",
+        "meaning_mm": "နောက်ဆုံးမှတော့"
+      },
+      "right": {
+        "word": "やっと",
+        "meaning_mm": "နောက်ဆုံးမှတော့"
+      }
+    },
+    {
+      "number": 45,
+      "left": {
+        "word": "価格",
+        "meaning_mm": "ဈေးနှုန်း"
+      },
+      "right": {
+        "word": "値段",
+        "meaning_mm": "ဈေးနှုန်း"
+      }
+    },
+    {
+      "number": 46,
+      "left": {
+        "word": "らくな",
+        "meaning_mm": "သက်တောင့်သက်သာ"
+      },
+      "right": {
+        "word": "簡単な",
+        "meaning_mm": "လွယ်ကူသော"
+      }
+    },
+    {
+      "number": 47,
+      "left": {
+        "word": "回収",
+        "meaning_mm": "စုဆောင်းမှု"
+      },
+      "right": {
+        "word": "集める",
+        "meaning_mm": "စုဆောင်းသည်"
+      }
+    },
+    {
+      "number": 48,
+      "left": {
+        "word": "めい",
+        "meaning_mm": "တူမ"
+      },
+      "right": {
+        "word": "兄弟の娘",
+        "meaning_mm": "ညီအစ်ကိုမောင်နှမ၏သမီး"
+      }
+    },
+    {
+      "number": 49,
+      "left": {
+        "word": "おこづかい",
+        "meaning_mm": "မုန့်ဖိုး"
+      },
+      "right": {
+        "word": "お金",
+        "meaning_mm": "ပိုက်ဆံ"
+      }
+    },
+    {
+      "number": 50,
+      "left": {
+        "word": "得意な",
+        "meaning_mm": "တော်သော"
+      },
+      "right": {
+        "word": "上手にできる",
+        "meaning_mm": "တော်သော"
+      }
+    },
+    {
+      "number": 51,
+      "left": {
+        "word": "機会",
+        "meaning_mm": "အခွင့်အရေး"
+      },
+      "right": {
+        "word": "チャンス",
+        "meaning_mm": "အခွင့်အရေး"
+      }
+    },
+    {
+      "number": 52,
+      "left": {
+        "word": "あいかわらず",
+        "meaning_mm": "ထုံးစံအတိုင်း"
+      },
+      "right": {
+        "word": "前と同じで",
+        "meaning_mm": "အရင်အတိုင်းပဲ"
+      }
+    },
+    {
+      "number": 53,
+      "left": {
+        "word": "きつい",
+        "meaning_mm": "ပင်ပန်းကြမ်းတမ်းသော"
+      },
+      "right": {
+        "word": "大変",
+        "meaning_mm": "ပင်ပန်းသော"
+      }
+    },
+    {
+      "number": 54,
+      "left": {
+        "word": "案",
+        "meaning_mm": "အကြံပြုချက်"
+      },
+      "right": {
+        "word": "アイデア",
+        "meaning_mm": "အကြံဉာဏ်"
+      }
+    },
+    {
+      "number": 55,
+      "left": {
+        "word": "協力",
+        "meaning_mm": "ပူးပေါင်းကူညီသည်"
+      },
+      "right": {
+        "word": "手伝い",
+        "meaning_mm": "အကူအညီ"
+      }
+    },
+    {
+      "number": 56,
+      "left": {
+        "word": "約",
+        "meaning_mm": "ခန့်မှန်းခြေ"
+      },
+      "right": {
+        "word": "だいたい",
+        "meaning_mm": "ခန့်မှန်းခြေ"
+      }
+    },
+    {
+      "number": 57,
+      "left": {
+        "word": "どなられる",
+        "meaning_mm": "အော်ဟစ်ခံရသည်"
+      },
+      "right": {
+        "word": "大声で怒られる",
+        "meaning_mm": "အသံကျယ်ကြီးနဲ့ အဆူခံရသည်"
+      }
+    },
+    {
+      "number": 58,
+      "left": {
+        "word": "あらゆる",
+        "meaning_mm": "အလုံးစုံသော"
+      },
+      "right": {
+        "word": "全部の",
+        "meaning_mm": "အားလုံး"
+      }
+    },
+    {
+      "number": 59,
+      "left": {
+        "word": "ががやく",
+        "meaning_mm": "တောက်ပသည်"
+      },
+      "right": {
+        "word": "光る",
+        "meaning_mm": "လင်းလက်တောက်ပသည်"
+      }
+    },
+    {
+      "number": 60,
+      "left": {
+        "word": "がっかり",
+        "meaning_mm": "စိတ်ပျက်သည်"
+      },
+      "right": {
+        "word": "残念な",
+        "meaning_mm": "ဝမ်းနည်းသော"
+      }
+    },
+    {
+      "number": 61,
+      "left": {
+        "word": "当然",
+        "meaning_mm": "ပုံမှန်အားဖြင့်"
+      },
+      "right": {
+        "word": "もちろん",
+        "meaning_mm": "သေချာပေါက်"
+      }
+    },
+    {
+      "number": 62,
+      "left": {
+        "word": "あまる",
+        "meaning_mm": "ပိုလျှံသည်"
+      },
+      "right": {
+        "word": "多すぎて残る",
+        "meaning_mm": "အများကြီးပိုနေသည်"
+      }
+    },
+    {
+      "number": 63,
+      "left": {
+        "word": "横断禁止",
+        "meaning_mm": "ဖြတ်သန်းခွင့်မရှိ"
+      },
+      "right": {
+        "word": "渡ってはいけません",
+        "meaning_mm": "ဖြတ်သန်းလို့မရ"
+      }
+    },
+    {
+      "number": 64,
+      "left": {
+        "word": "休みが明け",
+        "meaning_mm": "အားလပ်ရက်ကုန်သွားသော"
+      },
+      "right": {
+        "word": "休みが終わる",
+        "meaning_mm": "အားလပ်ရက်ပြီးဆုံးသည်"
+      }
+    },
+    {
+      "number": 65,
+      "left": {
+        "word": "混雑",
+        "meaning_mm": "ရှုပ်ထွေးနေသည်"
+      },
+      "right": {
+        "word": "客がたくさんいる",
+        "meaning_mm": "ဧည့်သည်အများကြီးရှိသည်"
+      }
+    },
+    {
+      "number": 66,
+      "left": {
+        "word": "おとなしい",
+        "meaning_mm": "ငြိမ်သက်သော"
+      },
+      "right": {
+        "word": "静かな",
+        "meaning_mm": "တိတ်ဆိတ်တည်ငြိမ်"
+      }
+    },
+    {
+      "number": 67,
+      "left": {
+        "word": "はげしい",
+        "meaning_mm": "ပြင်းထန်သော"
+      },
+      "right": {
+        "word": "強い",
+        "meaning_mm": "အားကောင်းသော"
+      }
+    },
+    {
+      "number": 68,
+      "left": {
+        "word": "ほっと",
+        "meaning_mm": "စိတ်အေးရသည်"
+      },
+      "right": {
+        "word": "安心する",
+        "meaning_mm": "စိတ်အေးရသည်"
+      }
+    },
+    {
+      "number": 69,
+      "left": {
+        "word": "ぴったり",
+        "meaning_mm": "ကွက်တိ"
+      },
+      "right": {
+        "word": "合っている",
+        "meaning_mm": "ကိုက်ညီသည်"
+      }
+    },
+    {
+      "number": 70,
+      "left": {
+        "word": "やや",
+        "meaning_mm": "နည်းနည်း"
+      },
+      "right": {
+        "word": "すこし",
+        "meaning_mm": "အနည်းငယ်"
+      }
+    },
+    {
+      "number": 71,
+      "left": {
+        "word": "完成",
+        "meaning_mm": "ပြီးဆုံးသွားသည်"
+      },
+      "right": {
+        "word": "終わる",
+        "meaning_mm": "ပြီးဆုံးသည်"
+      }
+    },
+    {
+      "number": 72,
+      "left": {
+        "word": "まもなく",
+        "meaning_mm": "မကြာခင်"
+      },
+      "right": {
+        "word": "もうすぐ",
+        "meaning_mm": "မကြာမီ"
+      }
+    },
+    {
+      "number": 73,
+      "left": {
+        "word": "退屈",
+        "meaning_mm": "ပျင်းရိသည်"
+      },
+      "right": {
+        "word": "つまらない",
+        "meaning_mm": "ပျင်းစရာကောင်းသော"
+      }
+    },
+    {
+      "number": 74,
+      "left": {
+        "word": "きぎょう",
+        "meaning_mm": "company"
+      },
+      "right": {
+        "word": "会社",
+        "meaning_mm": "company"
+      }
+    },
+    {
+      "number": 75,
+      "left": {
+        "word": "出場する",
+        "meaning_mm": "ပါဝင်သည်"
+      },
+      "right": {
+        "word": "参加する",
+        "meaning_mm": "ပါဝင်သည်"
+      }
+    },
+    {
+      "number": 76,
+      "left": {
+        "word": "記入",
+        "meaning_mm": "ရေးသွင်းခြင်း"
+      },
+      "right": {
+        "word": "書く",
+        "meaning_mm": "ရေးသည်"
+      }
+    },
+    {
+      "number": 77,
+      "left": {
+        "word": "活気",
+        "meaning_mm": "တက်ကြွလှုပ်ရှားမှု"
+      },
+      "right": {
+        "word": "にぎやかな",
+        "meaning_mm": "စည်ကားသော"
+      }
+    }
+  ],
+  "_source_note": "Includes main vocabulary entries 1–140 plus Katakana entries 1–40 and 擬音語/onomatopoeia entries from PDF pages 12–14. Myanmar glosses are transcribed or lightly normalized from the scanned tables; some explanations are concise where the scan wording is difficult to read.",
+  "giongo_page15": [
+    {
+      "number": 1,
+      "word": "ほっと",
+      "reading": "ほっと",
+      "meaning_mm": "စိတ်အေးရသည်"
+    },
+    {
+      "number": 2,
+      "word": "すっきり",
+      "reading": "すっきり",
+      "meaning_mm": "လန်းလန်းဆန်းဆန်း"
+    },
+    {
+      "number": 3,
+      "word": "がっかり",
+      "reading": "がっかり",
+      "meaning_mm": "စိတ်ပျက်သည်"
+    },
+    {
+      "number": 4,
+      "word": "すぎすぎ",
+      "reading": "すぎすぎ",
+      "meaning_mm": "တစ်စိတ်တစ်ပိုင်းမရှင်းလင်းသော OCR/မူရင်းစာလုံး"
+    },
+    {
+      "number": 5,
+      "word": "ぐっすり",
+      "reading": "ぐっすり",
+      "meaning_mm": "နှစ်နှစ်ခြိုက်ခြိုက်"
+    },
+    {
+      "number": 6,
+      "word": "ざらざら",
+      "reading": "ざらざら",
+      "meaning_mm": "ကြမ်းတမ်းသော"
+    },
+    {
+      "number": 7,
+      "word": "びしょびしょ",
+      "reading": "びしょびしょ",
+      "meaning_mm": "စိုစိုရွှဲရွှဲ"
+    },
+    {
+      "number": 8,
+      "word": "ぼろぼろ",
+      "reading": "ぼろぼろ",
+      "meaning_mm": "ပွန်းပဲ့ပျက်စီးနေသော"
+    },
+    {
+      "number": 9,
+      "word": "つるつる",
+      "reading": "つるつる",
+      "meaning_mm": "ပြောင်ချောချော"
+    },
+    {
+      "number": 10,
+      "word": "べたべた",
+      "reading": "べたべた",
+      "meaning_mm": "ကပ်စေးကပ်စေး"
+    }
+  ],
+  "_batch5_source_note": "Batch 5 transcribed from the original PDF pages 15–24: adverbs (pp.16–18), the page-15 擬音語 list, and same-meaning comparison pairs (pp.19–24). Some source spellings/glosses are unclear or appear inconsistent; these are retained as close to the scan as possible and marked in the source note."
 }

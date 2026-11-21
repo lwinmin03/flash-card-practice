@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Flashcard from "@/components/Flashcard";
 import GrammarFlashcard from "@/components/GrammarFlashcard";
+import SimilarFlashcard from "@/components/SimilarFlashcard";
 import { cn } from "@/lib/cn";
 import {
   getCardProgress,
@@ -119,7 +120,7 @@ function Session({
   const [flipped, setFlipped] = useState(false);
   const [results, setResults] = useState<SessionResults>({});
   const [prompt, setPrompt] = useState<CardPrompt>(() =>
-    readPrompt(deck.id, deck.defaultPrompt),
+    deck.kanaOnly ? "kanji" : readPrompt(deck.id, deck.defaultPrompt),
   );
 
   const cardIds = useMemo(() => deck.cards.map((card) => card.id), [deck.cards]);
@@ -254,12 +255,23 @@ function Session({
               </span>
             </div>
 
-            {deck.kind === "grammar" ? null : (
+            {deck.kind === "grammar" ||
+            deck.kind === "similar" ||
+            deck.kanaOnly ? null : (
               <PromptSwitch value={prompt} onChange={changePrompt} />
             )}
 
             {currentCard.kind === "grammar" ? (
               <GrammarFlashcard
+                key={currentCard.id}
+                card={currentCard}
+                level={deck.level}
+                flipped={flipped}
+                status={currentStatus}
+                onToggle={() => setFlipped((value) => !value)}
+              />
+            ) : currentCard.kind === "similar" ? (
+              <SimilarFlashcard
                 key={currentCard.id}
                 card={currentCard}
                 level={deck.level}
@@ -273,6 +285,7 @@ function Session({
                 card={currentCard}
                 level={deck.level}
                 prompt={prompt}
+                kanaOnly={deck.kanaOnly}
                 flipped={flipped}
                 status={currentStatus}
                 onToggle={() => setFlipped((value) => !value)}

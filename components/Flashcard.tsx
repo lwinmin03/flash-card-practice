@@ -9,13 +9,15 @@ type FlashcardProps = {
   card: WordCard;
   level: string;
   prompt: CardPrompt;
+  /** Kana-only cards show the word on the front and meanings on the back. */
+  kanaOnly?: boolean;
   flipped: boolean;
   status?: CardStatus;
   onToggle: () => void;
 };
 
-function kanjiSizeClass(kanji: string) {
-  const length = Array.from(kanji).length;
+function kanjiSizeClass(kanji: string | undefined) {
+  const length = Array.from(kanji ?? "").length;
 
   if (length <= 1) return "text-[clamp(5rem,30vw,9rem)]";
   if (length === 2) return "text-[clamp(4rem,24vw,7.5rem)]";
@@ -27,8 +29,8 @@ function kanjiSizeClass(kanji: string) {
  * Hiragana strings can be much longer than kanji (e.g. おかねをためる), so they
  * need a tighter scale to stay on one or two lines inside the card.
  */
-function hiraganaSizeClass(hiragana: string) {
-  const length = Array.from(hiragana).length;
+function hiraganaSizeClass(hiragana: string | undefined) {
+  const length = Array.from(hiragana ?? "").length;
 
   if (length <= 3) return "text-[clamp(3.25rem,18vw,5.5rem)]";
   if (length <= 5) return "text-[clamp(2.5rem,13vw,4rem)]";
@@ -40,15 +42,19 @@ export default function Flashcard({
   card,
   level,
   prompt,
+  kanaOnly = false,
   flipped,
   status,
   onToggle,
 }: FlashcardProps) {
-  const isHiraganaPrompt = prompt === "hiragana";
-  const promptText = isHiraganaPrompt ? card.hiragana : card.kanji;
-  const answer = isHiraganaPrompt
-    ? `Kanji: ${card.kanji}. Meaning: ${card.meaning}`
-    : `Reading: ${card.hiragana}. Meaning: ${card.meaning}`;
+  const isHiraganaPrompt = !kanaOnly && prompt === "hiragana";
+  const promptText =
+    (isHiraganaPrompt ? card.hiragana : card.kanji) ?? "";
+  const answer = kanaOnly
+    ? `Meaning: ${[card.meaningEn, card.meaning].filter(Boolean).join(". ")}`
+    : isHiraganaPrompt
+      ? `Kanji: ${card.kanji}. Meaning: ${card.meaning}`
+      : `Reading: ${card.hiragana}. Meaning: ${card.meaning}`;
 
   return (
     <div className="animate-card-in relative min-h-[240px] flex-1">
@@ -89,7 +95,7 @@ export default function Flashcard({
                   lang="ja"
                   className={cn(
                     "relative px-2 text-center font-kanji leading-tight tracking-tight text-ink [overflow-wrap:anywhere]",
-                    isHiraganaPrompt
+                    isHiraganaPrompt || kanaOnly
                       ? hiraganaSizeClass(promptText)
                       : kanjiSizeClass(promptText),
                   )}
@@ -113,37 +119,58 @@ export default function Flashcard({
             >
               <div className="flex items-center justify-between">
                 <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted">
-                  {isHiraganaPrompt ? "Kanji & meaning" : "Reading & meaning"}
+                  {kanaOnly
+                    ? "Meaning"
+                    : isHiraganaPrompt
+                      ? "Kanji & meaning"
+                      : "Reading & meaning"}
                 </span>
                 <StatusChip status={status} />
               </div>
 
               <div className="flex-1 overflow-y-auto py-3">
                 <div className="flex min-h-full flex-col items-center justify-center gap-4 px-1 text-center">
-                  {isHiraganaPrompt ? (
-                    <span
-                      lang="ja"
-                      className="font-kanji text-[clamp(1.8rem,8vw,2.75rem)] leading-tight text-accent"
-                    >
-                      {card.kanji}
-                    </span>
-                  ) : (
+                  {kanaOnly ? (
+                    card.meaningEn ? (
+                      <>
+                        <span
+                          lang="en"
+                          className="text-[clamp(1.4rem,6.5vw,2rem)] font-semibold leading-snug text-ink"
+                        >
+                          {card.meaningEn}
+                        </span>
+                        <span aria-hidden="true" className="h-px w-14 bg-line" />
+                      </>
+                    ) : null
+                  ) : isHiraganaPrompt ? (
                     <>
                       <span
                         lang="ja"
-                        className="font-kanji text-2xl leading-none text-muted"
+                        className="font-kanji text-[clamp(1.8rem,8vw,2.75rem)] leading-tight text-accent"
                       >
                         {card.kanji}
                       </span>
+                      <span aria-hidden="true" className="h-px w-14 bg-line" />
+                    </>
+                  ) : (
+                    <>
+                      {card.kanji !== card.hiragana ? (
+                        <span
+                          lang="ja"
+                          className="font-kanji text-2xl leading-none text-muted"
+                        >
+                          {card.kanji}
+                        </span>
+                      ) : null}
                       <span
                         lang="ja"
                         className="font-kanji text-[clamp(1.6rem,7vw,2.4rem)] leading-tight text-accent"
                       >
                         {card.hiragana}
                       </span>
+                      <span aria-hidden="true" className="h-px w-14 bg-line" />
                     </>
                   )}
-                  <span aria-hidden="true" className="h-px w-14 bg-line" />
                   <span
                     lang="my"
                     className="font-myanmar text-[clamp(1.05rem,4.8vw,1.4rem)] leading-relaxed text-ink"

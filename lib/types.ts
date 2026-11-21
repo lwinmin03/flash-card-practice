@@ -14,9 +14,13 @@ export type WordCard = {
   kind: "word";
   /** Stable id used for local progress tracking. */
   id: string;
+  /** The front text. For kana-only decks this is the katakana word. */
   kanji: string;
+  /** Reading, or an empty string for kana-only decks. */
   hiragana: string;
   meaning: string;
+  /** Optional English gloss shown above the main meaning. */
+  meaningEn?: string;
 };
 
 export type GrammarCard = {
@@ -33,9 +37,23 @@ export type GrammarCard = {
   notes?: string;
 };
 
-export type Card = WordCard | GrammarCard;
+export type SimilarMeaning = {
+  word: string;
+  meaning: string;
+};
 
-export type DeckKind = "vocabulary" | "grammar";
+/** A comparison card pairing two words with close or related meanings. */
+export type SimilarCard = {
+  kind: "similar";
+  /** Stable id used for local progress tracking. */
+  id: string;
+  left: SimilarMeaning;
+  right: SimilarMeaning;
+};
+
+export type Card = WordCard | GrammarCard | SimilarCard;
+
+export type DeckKind = "vocabulary" | "grammar" | "similar";
 
 export type Deck = {
   id: string;
@@ -45,6 +63,11 @@ export type Deck = {
   kind: DeckKind;
   /** Direction a vocabulary deck starts in; the study screen can switch it. */
   defaultPrompt: CardPrompt;
+  /**
+   * True for decks whose front text has no kanji/reading pair (e.g. katakana
+   * loanwords). Hides the prompt switch and shows only meanings on the backs.
+   */
+  kanaOnly: boolean;
   cards: Card[];
 };
 

@@ -177,7 +177,7 @@ export default function Home({ decks }: HomeProps) {
               Your decks
             </h2>
             <span className="text-xs text-muted">
-              {decks.length} {decks.length === 1 ? "level" : "levels"}
+              {decks.length} {decks.length === 1 ? "deck" : "decks"}
             </span>
           </div>
 
@@ -259,7 +259,11 @@ function DeckCard({
           aria-hidden="true"
           className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-accent-soft font-kanji text-lg font-semibold text-accent lg:h-16 lg:w-16 lg:text-xl"
         >
-          {deck.kind === "grammar" ? "文法" : deck.level}
+          {deck.kind === "grammar"
+            ? "文法"
+            : deck.kind === "similar"
+              ? "同"
+              : deck.level}
         </span>
 
         <div className="min-w-0 flex-1">
